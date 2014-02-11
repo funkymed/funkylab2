@@ -1,0 +1,433 @@
+BODY {		
+	font: 11px , Helvetica;	
+	margin : 0;
+	padding : 0;		
+	color:#000000;
+	background: url(../images/back_.gif);
+}
+
+.linebas{
+	background-color:#77756c;
+	height:1;
+}
+TABLE {		
+	font: 11px ,Arial, Helvetica;	
+}
+
+UL{
+	font: 11px ,Arial, Helvetica;	
+}
+
+input{
+	border-width:1;
+	border-style:solid;
+	border-collapse:collapse;
+	margin:2;
+	background-color:grey;
+	color:white;
+}
+
+
+#tablecontenu{
+	width:100%;
+	border-width:0;
+	background-color:#d2dddf;
+	
+}
+
+.chemin{
+	font: 11px ,Arial, Helvetica;
+	height:18;
+	text-decoration: none; 
+	color:#FFFFFF;
+	font-weight:bold;		
+	padding: 3px ;
+}
+
+
+.chemin A{
+	font: 11px ,Arial, Helvetica;
+	height:18;
+	text-decoration: none; 
+	color:#FFFFFF;
+	font-weight:bold;		
+}
+
+A{
+	font: 11px ,Arial, Helvetica;
+	text-decoration: none; 
+	color:#4e727a;
+	font-weight:bold;
+}
+
+A:hover{
+	font: 11px ,Arial, Helvetica;
+	text-decoration: underline; 
+	font-weight:bold;
+}
+
+HR{
+	border: solid  #aab5a5;
+	border-width:1;
+	width:80%;
+}
+/*==================================================================================================
+//	SDUS SOUS CATEGORIE
+//==================================================================================================*/
+#souscat {
+		font: 11px ,Arial, Helvetica;
+		padding:5;
+		width:100%;
+		background-color:#d2dddf;	
+}
+/*==================================================================================================
+//	SDUS FIELDSET
+//==================================================================================================*/
+
+#botomform fieldset{
+	font: 12px ,Arial, Helvetica;
+	background-color:#faa622;	
+ 	 border:0;
+ 	 height:100;
+}
+
+#botomform legend{
+	font: 14px ,Arial, Helvetica;
+	color:#4e727a;
+	font-weight:bold;	
+			
+}
+
+/*==================================================================================================
+//	CSS CONTENU
+//==================================================================================================*/
+
+#contenu p { 	
+	font: 11px ,Arial, Helvetica;
+   	font-family: Helvetica; 
+}
+
+#contenu td { 	
+	font: 11px ,Arial, Helvetica;
+   	font-family: Helvetica; 
+}
+
+#contenu TABLE{
+	background-color:#ffffff;	
+}
+
+#contenu .texte{
+	font: 10pt ,Arial, Helvetica;
+	color:#000000;
+	height:30;	
+	font-weight:bold;		
+}
+	
+#contenu .galerie{
+	font: 11px ,Arial, Helvetica;
+	color:#000000;
+	width:92;
+	padding:1em;
+	text-align:center;
+	border:3px solid #ffffff;
+}	
+
+#contenu .tabgalerie {
+		padding:5;
+		background-color:#d2dddf;	
+}
+
+#contenu .galerie_OVER{
+	font: 11px ,Arial, Helvetica;
+	color:#000000;
+	width:92;
+	background-color:#ff0000;
+	padding:1em;
+	border:3px solid #ffffff;
+}	
+
+#contenu .titreTD{
+	height:32;
+	background: url(../images/back_titre.gif);
+	background-repeat: repeat-x;
+	background-color:#ffffff;	
+}
+
+#contenu .titre{
+	font: 12pt ,Arial, Helvetica;
+	color:#4e727a;
+	text-align:left;
+	text-decoration: none; 
+}
+
+#contenu .titre A{
+	font: 12pt ,Arial, Helvetica;
+	color:#4e727a;
+	font-weight:bold;	
+	text-decoration: none; 
+}
+
+#contenu .titre A:hover{
+	color:#638992;
+	text-decoration: none; 
+}
+
+#contenu .infobillet{
+	text-align:right;
+	color:#aaaaaa;
+}
+
+#contenu .infobillet A{
+	font: 10px ,Arial, Helvetica;
+	color:#aaaaaa;	
+}
+
+#contenu .contenu1{
+	text-align:left;
+	vertical-align:top;	
+}
+
+#contenu .contenu2{
+	text-align:left;
+	vertical-align:top;
+}
+
+#contenu .contenu3{
+	text-align:left;
+	vertical-align:top;	
+}
+
+/*==================================================================================================
+//	CSS COMMENTAIRE
+//==================================================================================================*/
+
+#commentaire{
+	font: 10px ,Arial, Helvetica;	
+	background-color:#ffffff;	
+}
+
+#commentaire FIELDSET{
+	font: 10px ,Arial, Helvetica;
+	width:70%;
+	border-width:0;
+	background-color:#d2dddf;
+}
+
+#commentaire TD{
+	font: 10px ,Arial, Helvetica;	
+}
+
+#commentaire LEGEND{
+	font: 15px ,Arial, Helvetica;
+	font-weight:bold;
+	color:#4e727a;
+}
+
+#commentaire INPUT{
+	font: 10px ,Arial, Helvetica;
+	color:#000000;
+	background-color:#FFFFFF;	
+	border: thick dashed  #DDDDDD;
+	border-width:1;
+}
+
+#commentaire TEXTAREA{
+	font: 10px ,Arial, Helvetica;
+	color:#000000;
+	background-color:#FFFFFF;	
+	border: thick dashed  #DDDDDD;
+	border-width:1;
+}
+#commentaire .nomdate{
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#FFFFFF;
+	background-color:#4e727a;	
+}
+
+#commentaire .nomdate A{
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#FFFFFF;
+	text-decoration: underline; 
+}
+
+
+#commentaire .nomdateADMIN{
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#FFFFFF;
+	background-color:#ff0000;	
+}
+
+#commentaire .nomdateADMIN A{
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#FFFFFF;
+	text-decoration: underline; 
+}
+
+#commentaire .textdisp{
+	font: 10px ,Arial, Helvetica;
+}
+
+#commentaire .btnbox{
+	font: 10px ,Arial, Helvetica;
+	color:#FFFFFF;
+	background-color:#4e727a;	
+	border: thick dashed  #FFFFFF;
+	border-width:1;
+}
+
+#commentaire .btnbox_OVER{
+	font: 10px ,Arial, Helvetica;
+	color:#4e727a;
+	background-color:#FFFFFF;	
+	border: thick dashed  #ff0000;
+	border-width:1;
+	text-decoration: none; 
+}
+
+
+/*==================================================================================================
+//	CSS CALENDRIER
+//==================================================================================================*/
+
+#calendrier{
+	width:198;
+	height:159;
+	font: 9px ,Arial, Helvetica;
+	color:#000000;
+	background-color:#eeeeee;
+	padding:5;
+}
+
+#calendrier .cal_mois{	
+	height:10;
+	color:#FFFFFF;
+	background-color:#5e80ff;	
+}
+
+#calendrier .cal_mois A:hover{	
+	color:#FFFFFF;
+	background-color:#5e80ff;	
+	text-decoration: underline; 
+}
+
+#calendrier A{
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#ffffff;
+	text-decoration: none; 
+}
+
+#calendrier .day{
+	height:10;
+	font: 9px ,Arial, Helvetica;
+	text-align:right;
+	color:#ffffff;
+	background-color:#4e727a;	
+}
+
+#calendrier .cal_valide{
+	font: 9px ,Arial, Helvetica;
+	color:#000000;
+	background-color:#5e80ff;	
+}
+
+#calendrier .cal_valide_OVER{
+	font: 9px ,Arial, Helvetica;
+	color:#ffffff;
+	background-color:#4e727a;	
+}
+
+#calendrier .cal_valide_OVER A{
+	font: 9px ,Arial, Helvetica;
+	color:#ffffff;
+	background-color:#4e727a;	
+}
+
+#calendrier .cal_today{
+	border:  thick dashed  #4e727a;
+	border-width:2;
+	background-color:#ffffff;
+}
+
+#calendrier .cal_day{
+	background-color:#ffffff;
+}
+
+/*==================================================================================================
+//	RECHERCHE
+//==================================================================================================*/
+#searchform{
+	height:10px;
+	padding:0px;
+	margin:0px;
+	border-width:0px;
+}
+#searchform .zoneinput{
+	font-size:8pt;
+	background-color:white;
+	color:black;
+	border-color:grey;
+}
+#searchform .btn{
+	font-size:8pt;
+	background-color:black;
+	color:white;
+	border-color:white;
+}
+.highlight1{
+		text-decoration: none; 	
+		background-color:#FFFF00;		
+}
+.highlight2{
+		text-decoration: none; 	
+		background-color:#FF0000;		
+}
+.highlight3{
+		text-decoration: none; 	
+		background-color:#FF00FF;		
+}
+.highlight4{
+		text-decoration: none; 	
+		background-color:#00FFFF;		
+}
+.highlight5{
+		text-decoration: none; 	
+		background-color:#00FF00;		
+}
+
+/*==================================================================================================
+//	MENU TABLEAU
+//==================================================================================================*/
+
+
+#menutableau {
+	font-size:15;
+	border-width:1px;
+	border-style:solid;
+	padding:0;
+	margin:0;
+	background-color:#ffffff;
+	border-collapse:collapse;
+}
+
+#menutableau .rubrique{
+	color:#ffffff;
+	width:150;
+	background-color:#aaaaff;
+}
+#menutableau .subrub{
+	color:#ffffff;
+	width:100%;
+	background-color:#eeeeff;
+}
+
+
+#menutableau td{
+	border-width:1px;
+	border-style:solid;
+	border-color:#eeeeee;
+}

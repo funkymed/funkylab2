@@ -1,0 +1,98 @@
+			#wincss {
+				color:#2a3fbe;
+				border: 2px solid #dddddd;
+				background-color:#eeeeee;
+				cursor: default;
+			}
+			
+			#wincss FIELDSET{
+				font: 11px , Arial;
+				border: 1px solid #dddddd;
+				background-color:#f7f7f7;
+			}	
+			
+			#wincss .noneradio{
+				font: 11px , Arial;
+				border: 0px solid #dddddd;
+				background-color:#f7f7f7;
+			}			
+			
+			#wincss LEGEND{		
+				font: 12px , Arial;
+				font-weight:none;
+				color:#2a3fbe;
+			}			
+			
+			#wincss FIELDSET INPUT{
+				font: 11px , Arial;
+				color:#000000;
+				border: 1px solid #b1b1b1;
+				background-color:#ffffff;		
+			}
+			
+			#wincss .winbuton {	
+				font: 11px , Arial;
+				border: 0px solid #b1b1b1;
+				width:96;
+				height:31;				
+				font-weight:bold;
+				background: url(../img/btn_off.gif);
+				cursor: pointer;
+			}
+			
+			#wincss .winbutonover{	
+				font: 11px , Arial;
+				border: 0px solid #b1b1b1;
+				width:96;
+				height:31;				
+				font-weight:bold;
+				background: url(../img/btn_on.gif);
+				cursor: pointer;
+			}
+			
+			#wincss .closebtn {	
+				font: 11px , Arial;
+				border: 0px solid #b1b1b1;
+				width:31;
+				height:26;
+				background: url(../img/btn_close_off.gif);
+				cursor: pointer;
+			}
+			
+			#wincss .closebtnover{	
+				font: 11px , Arial;
+				border: 0px solid #b1b1b1;
+				width:31;
+				height:26;
+				background: url(../img/btn_close_on.gif);
+				cursor: pointer;
+			}			
+			
+			#wincss .bdhaut{
+				height:26;
+				background: url(../img/bd_haut.gif);
+				cursor: move;
+			}
+			
+			#wincss .textbdhaut{
+				font: 11px , Arial;
+				font-weight:bold;
+				color:#ffffff;
+			}
+
+			#wincss .ligne{
+				width:2;
+				background-color:#dddddd;	
+			}						
+			
+			#wincss a{
+				color:#000000;
+				text-decoration: none; 
+				cursor: pointer;
+			}
+			
+			#wincss a:hover{
+				color:#000000;
+				text-decoration: none; 
+				cursor: pointer;
+			}	

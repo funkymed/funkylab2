@@ -1,0 +1,40 @@
+<HTML>
+	<HEAD>
+		<TITLE>#TITRE# #VERSION#</TITLE>
+		<link rel="stylesheet" href="megabrowser/template/css/css.css" type="text/css">
+		<script language="JavaScript1.2">
+			function closewin(){
+				window.close();
+			}
+			function ConfirmChoice(messageToCconfirm,urlredirect){
+				answer = confirm(messageToCconfirm)
+				if (answer ==true){
+					location = urlredirect
+				}
+			}
+			function RenameDirPrompt(messageToCconfirm,oldfilename){
+				answer = prompt(messageToCconfirm,oldfilename);
+				if (answer!=null){
+					location = "browser.php?oldname="+oldfilename+"&dir=image%2F&validrename=&newname="+answer;
+				}
+			}
+		</script>
+	</HEAD>
+	<BODY>
+	<P align='center'><a href='javascript:closewin()'>Fermer la fenetre</A></P>
+		<TABLE align='center'>
+			<TR>
+				<TD valign='top'>
+			
+					#FORMULAIRES#
+					
+					#RESULTAT#
+					
+					#TIMECODE#
+					
+				</TD>
+			</TR>
+		</TABLE>
+		<P align='center'><a href='javascript:closewin()'>Fermer la fenetre</A></P>
+	</BODY>
+</HTML>

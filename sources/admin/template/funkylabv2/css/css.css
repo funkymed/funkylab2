@@ -1,0 +1,440 @@
+BODY {	
+	margin: 0px 0px 0px 0px;
+	color:#555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background: url(../images/back.gif);
+}
+
+.titremenu{
+		font: 11px , Arial;
+		background-color:#000000;
+		color:#FFFFFF;
+		font-weight:bold;
+}
+
+.titrenews{
+		font: 12px , Arial;	
+		text-decoration: none; 	
+		color:#555555;
+		border: 2px solid #EEDDCC;
+		background-color:#FFEEDD;	
+}		
+
+.highlight1{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FFFF00;		
+}
+.highlight2{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FF0000;		
+}
+.highlight3{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FF00FF;		
+}
+.highlight4{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#00FFFF;		
+}
+.highlight5{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#00FF00;		
+}
+li{
+		
+		list-style-type: square;
+		color:#888888;
+		margin: 0 ;
+		padding: 0 ;
+}
+.winline2{
+		font: 11px , Arial;
+		background-color:#FFB000;
+		height:3;
+		border: 0px ;
+}		
+
+hr{
+		background-color:#77756C;
+		height:3;
+		width:300;
+		border-width:0px;
+	}
+/* LOGIN  */
+
+	.titrelogin{
+			font: 23px , Arial;
+			color:#FFB000;
+			font-weight:bold;
+	}
+	
+	.titrelogin fieldset{
+			background-color:#ffffff;
+			text-align:center;
+			border-width:0;
+			-moz-border-radius:1em 1em 1em 1em;
+	}
+	
+	.loginbox{
+			font: 11px , Arial;
+			background-color:#eeeeee;
+			text-align:left;
+			border-width:4;
+			border-style:solid;
+			border-color:#ffffff;
+	}
+	
+	.loginpass{
+			font: 11px , Arial;
+			color:#555555;
+			border: 1px solid #BBBBBB;
+			background-color:#DDDDDD;
+			font-weight:bold;
+	}
+	.loginput{
+			font: 11px , Arial;
+			color:#000000;
+			background-color:#ffffff;
+			text-align:center;
+			border-width:2;
+			border-style:solid;
+			border-color:#dedede;
+	}
+	
+	p { 	
+			font: 11px , Arial;
+	}
+	.logintxt { 	
+			font: 11px , Arial; 
+		   	font-weight:bold;
+	}
+
+/* LINK  */
+		
+	A{
+			font: 11px , Arial;
+			text-decoration: none; 
+			color:#DE1E1E;
+			font-weight:bold;
+			text-decoration: none; 
+	}
+	
+	A:hover{
+			font: 11px , Arial;
+			font-weight:bold;
+			text-decoration: underline; 
+	}
+/* COURRANT  */
+	p { 	
+			font: 11px , Arial;
+	
+	}
+	.dossier{
+		font: 11px , Arial;
+		text-decoration: none; 		
+	}
+/* fenetre  */	
+	.windcontenu{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#EAE7EB;
+			text-align:center;
+			height:16;
+			
+	}
+	
+	.ALERTBLACKLIST{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#ffbbbb;
+			color:#bb0000;
+			text-align:center;
+			height:16;
+	}
+	
+	.windcontenu2 {
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#E3E0E4;
+			text-align:center;
+			height:16;
+	}
+	.winOVER{
+			font: 11px , Arial;
+			border: 0px;
+			color:#FFFFFF;
+			background-color:#FFB000;
+			text-align:center;
+			height:16;
+	}	
+	
+	.winOVER A{
+			font: 11px , Arial;
+			border: 0px;
+			color:#FFFFFF;
+			font-weight:bold;
+			background-color:#FFB000;
+			text-align:center;
+			height:16;
+	}	
+	
+	
+	.windcontenu3{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#DDDDDD;
+			text-align:center;
+			height:20;
+			font-weight:bold;
+			
+	}
+	.winOVER3{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#000000;
+			color:#FFFFFF;
+			text-align:center;
+			height:20;
+			font-weight:bold;
+	}	
+	
+	.listselect{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FFFFFF;
+			color:#000000;
+			text-align:left;
+			width:200;
+			font-weight:normal;
+			border-style: solid;
+	}
+		
+	.listselect optgroup{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FFFFFF;
+			color:#000000;
+			text-align:left;
+			width:200;
+			font-weight:bold;
+			border-style: solid;
+	}	
+	
+	
+	.windcontenu0{
+			font: 11px , Arial;
+			background-color:#FFFFFF;
+			text-align:center;
+			height:30;
+			width:90%;
+			border-width:4;
+			border-style:solid;
+			border-color:#efefef;
+			-moz-border-radius:1em 1em 1em 1em;
+	}
+	.winline{
+			font: 11px , Arial;
+			background-color:#77756C;
+			height:3;
+			border-width:0px;
+	}	
+	.wintitle{
+			font: 20px , Arial;
+			color:#77756C;
+			height:3;
+			border-width:0px;
+	}	
+	.fondcoeur{
+			font: 11px , Arial;
+			color:#555555;
+			border: 0px solid #B8ACBD;
+			background-color:#E9E1EB;
+			font-weight:bold;
+	}	
+/* ALERTE  */	
+	.ALERTEDOUBLON{
+			font: 11px , Arial;
+			border-width:0px;
+			background-color:#FFbbbb;
+			color:#bb0000;
+			text-align:center;
+			height:16;
+	}
+	.ALERTEMAIL{
+			font: 11px , Arial;
+			border-width: 0px;
+			background-color:#bbFFbb;
+			color:#00bb00;
+			text-align:center;
+			height:16;
+	}
+	.ALERTEIP{
+			font: 11px , Arial;
+			border-width: 0px;
+			background-color:#FFbbFF;
+			color:#bb00bb;
+			text-align:center;
+			height:16;
+	}	
+/* USER */
+	.userbox{
+			font: 11px , Arial;
+			border-width: 1px solid #BBBBBB;
+			background-color:#FFFFFF;
+	}
+/* CALENDRIER */
+	.cal_mois{
+			border-width: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}	
+	.cal_mois A{
+			border-width: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}		
+	
+	.cal_mois A:hover{
+			border-width: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}		
+	
+	
+	.cal_contour{
+			border-width: 1px solid #BBBBBB;
+			background-color:#aaaaaa;
+	}	
+	.cal_jour{
+			font: 5pt , Arial;
+			background-color:#BBBBBB;
+	}	
+	.cal_Njour{
+			font: 5pt , Arial;
+			border-width: 1px solid #BBBBBB;
+			background-color:#DDDDDD;
+	}
+	.cal_seance{
+			font: 5pt , Arial;
+			border-width: 1px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#333333;
+	}	
+	.cal_seance A{
+			font: 5pt , Arial;
+			font-weight:bold;
+			color:#FFFFFF;
+	}				
+	.cal_seance A:hover{
+			font: 5pt , Arial;
+			font-weight:bold;
+			color:#000000;
+	}	
+	
+	.searchletter{	
+		font: 11px , Arial;
+		border-width: 0px solid #BBBBBB;
+		background-color:#EEEEEE;	
+		color:#333333;
+		font-weight:bold;
+	}
+	
+	.listprod{
+		font: 11px , Arial;
+		border: 1px solid #BBBBBB;
+		background-color:#EEEEEE;
+		height:200;
+		width:90%;
+		border: 2px solid #AAAAAA;
+	}	
+	
+/* FORMULAIRE */
+
+	FORM{
+		color:#000000;
+		font-weight:bold;
+		border-width:0px;
+	}	
+	
+	
+	FIELDSET{
+		font: 11px , Arial;
+		color:#000000;
+		border: thick dashed #AAAAAA;
+		border-width:1;	
+		background-color:#EEEEEE;
+	}	
+	
+	LEGEND{		
+		font: 15px , Arial;
+		font-weight:bold;
+		color:#FFB000;
+	}	
+	
+	.ordre{
+		font: 10px , Arial;
+		width:16;
+		height:16;
+		text-align:center;
+	}	
+	
+	.disabled{
+		font: 10px , Arial;
+		font-weight:bold;
+		border: 0px;
+		background-color:#000000;		
+		color:#FFFFFF;
+		text-align:left;
+	}
+	
+	.listpagecat{
+		font: 10px , Arial;
+		background-color:#FFFFFF;
+		color:#000000;
+		text-align:left;
+	}
+	.FIELDSETOVER{
+		font: 11px , Arial;
+		color:#000000;
+		border: thick dashed #AAAAAA;
+		border-width:1;	
+		background-color:#FFBB00;
+	}	
+	
+	.FIELDSET{
+		font: 11px , Arial;
+		color:#000000;
+		border: thick dashed #AAAAAA;
+		border-width:1;	
+		background-color:#FFBB00;
+	}			
+	
+	.onglet{	
+		color:#555555;
+		background-color:#dfdfdf;	
+		font-weight:bold;
+		padding:5;
+		text-align:center;
+		border-style:solid;
+		border-width:0;
+		-moz-border-radius:1em 1em 0em 0em;
+	}	
+	
+	.onglet_over{
+		background-color:#efefef;
+		padding:5;
+		text-align:center;
+		border-style:solid;
+		border-width:0;
+		-moz-border-radius:1em 1em 0em 0em;
+	}	

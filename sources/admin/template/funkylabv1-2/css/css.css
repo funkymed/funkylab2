@@ -1,0 +1,308 @@
+BODY {		
+	font: 11px , Arial;	
+	
+	margin : 0;
+	padding : 0;		
+	color:#000000;
+	background: url(../images/back.gif);
+}
+
+.titremenu{
+		font: 11px , Arial;
+		background-color:#000000;
+		color:#FFFFFF;
+		font-weight:bold;
+}
+
+.titrenews{
+		font: 12px , Arial;	
+		text-decoration: none; 	
+		color:#555555;
+		border: 2px solid #CCDDEE; 
+		background-color:#FFEEDD;	
+}		
+
+.highlight1{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FFFF00;		
+}
+.highlight2{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FF0000;		
+}
+.highlight3{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#FF00FF;		
+}
+.highlight4{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#00FFFF;		
+}
+.highlight5{
+		font: 11px , Arial;	
+		text-decoration: none; 	
+		background-color:#00FF00;		
+}
+li{
+		
+		list-style-type: square;
+		color:#888888;
+		margin: 0 ;
+		padding: 0 ;
+}
+.titrecat{
+	background-color:#00FF00;	
+}	
+
+
+/* LOGIN  */
+
+	.titrelogin{
+			font: 23px , Arial;
+			color:#AB833A; 
+			font-weight:bold;
+	}
+	
+	.loginbox{
+			font: 11px , Arial;
+			border: 1px solid #BDB4AC; 
+			background-color:#FFF3DA; 
+	}
+	.loginpass{
+			font: 11px , Arial;
+			color:#555555;
+			border: 1px solid #BDB4AC; 
+			background-color:#F0E3C8; 
+			font-weight:bold;
+	}
+	.loginput{
+			font: 11px , Arial;
+			border: 1px solid #BDB4AC; 
+			background-color:#FFFFFF;
+	}
+	p { 	
+			font: 11px , Arial;
+		   	font-family: Arial; 
+	}
+	.logintxt { 	
+			font: 11px , Arial; 
+		   	font-weight:bold;
+	}
+
+/* LINK  */
+		
+	A{
+			font: 11px , Arial;
+			text-decoration: none; 
+			color:#555555;
+	}
+	
+	A:hover{
+			font: 11px , Arial;
+			text-decoration: underline; 
+	}
+/* COURRANT  */
+	p { 	
+			font: 11px , Arial;
+	
+	}
+	.dossier{
+		font: 11px , Arial;
+		text-decoration: none; 		
+	}
+/* fenetre  */	
+	.windcontenu{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FCFAF8; 
+			text-align:center;
+			height:16;
+	}
+	.windcontenu2{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#F5F3F1; 
+			text-align:center;
+			height:16;
+	}
+	.winOVER{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#D8B678;
+			text-align:center;
+			height:16;
+	}		
+	.windcontenu3{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#DDDDDD;
+			text-align:center;
+			height:20;
+			font-weight:bold;
+	}
+	.winOVER3{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#D8B678;
+			text-align:center;
+			height:20;
+			font-weight:bold;
+	}		
+	.listselect{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FFFFFF;
+			text-align:center;
+			width:200;
+			font-weight:bold;
+	}
+	.windcontenu0{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FFFFFF;
+			text-align:center;
+			height:30;
+			width:90%;
+			border: 1px solid #BDB4AC; 
+	}
+	.winline{
+			font: 11px , Arial;
+			background-color:#BD954C; 
+			height:3;
+			border: 0px ;
+	}	
+	.wintitle{
+			font: 20px , Arial;
+			color:#BD954C;
+			height:3;
+			border: 0px ;
+	}	
+
+/* ALERTE  */	
+	.ALERTEDOUBLON{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FF0000;
+			text-align:center;
+			height:16;
+	}
+	.ALERTEMAIL{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#00FF00;
+			text-align:center;
+			height:16;
+	}
+	.ALERTEIP{
+			font: 11px , Arial;
+			border: 0px;
+			background-color:#FF00FF;
+			text-align:center;
+			height:16;
+	}		
+/* USER */
+	.userbox{
+			font: 11px , Arial;
+			border: 1px solid #ACB4BD;
+			background-color:#FFFFFF;
+	}
+/* CALENDRIER */
+	.cal_mois{
+			border: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}	
+	
+	.cal_mois A{
+			border: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}		
+	
+	.cal_mois A:hover{
+			border: 0px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#555555;
+	}	
+	
+	.cal_contour{
+			border: 1px solid #BBBBBB;
+			background-color:#aaaaaa;
+	}	
+	.cal_jour{
+			font: 5pt , Arial;
+			background-color:#BBBBBB;
+	}	
+	.cal_Njour{
+			font: 5pt , Arial;
+			border: 1px solid #BBBBBB;
+			background-color:#DDDDDD;
+	}
+	.cal_seance{
+			font: 5pt , Arial;
+			border: 1px solid #BBBBBB;
+			font-weight:bold;
+			color:#FFFFFF;
+			background-color:#BD954C;
+	}		
+	
+	.cal_seance A{
+			font: 5pt , Arial;
+			font-weight:bold;
+			color:#FFFFFF;
+	}				
+	.cal_seance A:hover{
+			font: 5pt , Arial;
+			font-weight:bold;
+			color:#000000;
+	}		
+	
+#FORMULAIRE
+
+	FORM{
+		color:#000000;
+		font-weight:bold;
+		border: 2px solid #AAAAAA;
+	}	
+	
+	
+	FIELDSET{
+		font: 11px , Arial;
+		color:#000000;
+		border: thick dashed #AAAAAA;
+		border-width:1;	
+		background-color:#EEEEEE;
+	}	
+	
+	LEGEND{		
+		font: 15px , Arial;
+		font-weight:bold;
+		color:#FFB000;
+	}		
+	
+	.onglet{	
+		color:#555555;
+		background-color:#dfdfdf;	
+		font-weight:bold;
+		padding:5;
+		text-align:center;
+		border-style:solid;
+		border-width:0;
+		-moz-border-radius:1em 1em 0em 0em;
+	}	
+	
+	.onglet_over{
+		background-color:#efefef;
+		padding:5;
+		text-align:center;
+		border-style:solid;
+		border-width:0;
+		-moz-border-radius:1em 1em 0em 0em;
+	}	

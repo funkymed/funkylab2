@@ -1,0 +1,180 @@
+body{
+	font-size: 8pt; 
+	font-family: Arial; 
+	text-decoration: none; 
+	color:#555544;
+	background-image:url(../img/back.gif);
+}		
+A{
+	font-size: 8pt; 
+	font-family: Arial; 
+	text-decoration: none; 
+	color:#5555ff;
+}
+TD{
+	font-size: 8pt; 
+	font-family: Arial; 
+	text-decoration: none; 
+	color:#555544;
+}			
+A:hover{
+	font-size: 8pt; 
+	font-family: Arial; 
+	text-decoration: underline; 
+	color:#5555ff;
+	
+}
+
+.loginadmin{
+	color:#DDDDDD;				
+}
+
+
+.infobox{
+	font: 8pt;  Arial;	
+	text-align:right;
+	width : 100%;
+	text-decoration: none; 	
+	color:#AAAAAA;				
+	border: 0px;
+	height:10;
+	background-color:#FFFFFF;					
+}			
+
+.tablevignette{
+	border: 2px solid #ffbb00;
+	background-color:#ffffff;		
+}
+
+.vignette{
+	font: 8pt;  Arial;	
+	text-align:center;
+	width : 92;
+	height:128;					
+	text-decoration: none; 	
+	color:#AAAA99;				
+	border: 4px solid #efefef;
+	background-color:#ffffff;	
+	
+	-moz-border-radius:1em 1em 0 0;				
+}
+
+.vignetteOVER{
+	font: 8pt;  Arial;	
+	text-align:center;
+	width : 92;
+	height:128;
+	text-decoration: none; 	
+	color:#000000;				
+	border: 4px solid #ff0000;
+	background-color:#ffffff;					
+	-moz-border-radius:1em 1em 0 0;	
+}		
+				
+.bug{
+	font-size: 8pt; 
+	font-family: Arial; 
+	text-decoration: none; 
+	color:#000000;
+	text-align:center;
+	border: 4px solid #DDDDDD;
+	background-color:#EEEEEE;	
+}	
+
+.btn{
+	font-size: 8pt; 
+	font-family: Arial; 				
+	text-decoration: none; 	
+	color:#AAAA99;				
+	border: 1px solid #DDDDDD;
+	background-color:#DDDDDD;					
+}
+
+.btnOVER{
+	font-size: 8pt; 
+	font-family: Arial; 			
+	text-decoration: none; 	
+	color:#AAAA99;				
+	border: 1px solid #DDDDDD;
+	background-color:#EEEEEE;					
+}	
+
+#dialoguebox {
+    position:absolute;
+    left: 50%; 
+    top: 30%;
+    text-align : center;
+    width: 300px;     
+    margin-left: -150px; /* moitié de la largeur */
+    background-color:#ffbb00;
+    border-width:4;
+    border-style:solid;
+    border-color:#ff0000;
+    color:black;    
+	-moz-border-radius:1em 1em 1em 1em;
+}
+
+#dialoguebox fieldset{
+	border-width:0;    
+}
+
+#dialoguebox .textezone{
+	font-size: 8pt; 
+	font-family: Arial; 				
+	text-decoration: none; 	
+	color:#000000;				
+	border: 1px solid #555555;
+	background-color:#ffffff;	
+}
+
+#dialoguebox .btn{
+	width: 50px;
+    height: 20px;
+	font-size: 8pt; 
+	font-family: Arial; 				
+	text-decoration: none; 	
+	color:#000000;				
+	border: 1px solid #555555;
+	background-color:#ffffff;	
+}
+
+#dialoguebox .btnOVER{
+	width: 50px;
+    height: 20px;
+	font-size: 8pt; 
+	font-family: Arial; 				
+	text-decoration: none; 	
+	color:#000000;				
+	background-color:#dddddd;					
+}	
+
+
+#adminoption .onglet{
+	border: 4px solid #FFAA00;
+	text-align : center;
+	width:150;
+	height:20;
+	color:#FFFFFF;
+	background-color:#FFAA00;
+	-moz-border-radius:1em 1em 0 0;
+}
+
+#adminoption .onglet A{
+	color:#FFFFFF;
+	text-decoration: none; 
+}
+
+#adminoption .ongletOVER{
+	border: 4px solid #ff0000;
+	text-align : center;
+	width:150;
+	height:20;
+	color:#FFFFFF;
+	background-color:#FFAA00;
+	-moz-border-radius:1em 1em 0 0;
+}
+
+#adminoption .ongletOVER A{
+	color:#FFFFFF;
+	text-decoration: none; 
+}

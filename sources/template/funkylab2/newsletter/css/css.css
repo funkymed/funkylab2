@@ -1,0 +1,100 @@
+body {		
+	font-family: Arial;
+	font-size:11px ;
+	margin : 0;
+	padding : 0;		
+	color:#000000;
+}
+#page {
+	margin : 0;
+	padding : 0;
+	width:600;
+	font-family: Arial;
+	font-size:11px ;
+	background-color:white;	
+}
+#page .titre{
+	font-family: Arial;
+	font-size:15pt;
+}		
+#page A{
+	font: 11px , Arial;
+	text-decoration: none; 
+	color:#3e63ee;
+	font-weight:bold;
+}	
+#page A:hover{
+	font-family: Arial;
+	font-size:11px ;
+	text-decoration: underline; 
+	font-weight:bold;
+}
+#page .newsletterdate{
+	font-family: Arial;
+	font-size:11px ;
+	font-weight:bold;
+	color:#3e63ee;
+}	
+#page .edito{
+	font-family: Arial;
+	font-size:11px ;
+	text-align:justify;
+}
+#page .hrstyle{
+	border-width:0;
+	border-style:solid;
+	background-color:#ffbb00;
+	height:3;	
+}
+#lastbillet{
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size:11px ;
+	text-align:justify;
+	width:100%;
+	border-width:1;
+	border-style:solid;
+	border-color:cfcfcf;
+	margin:5;
+	background-color:#3e63ee;
+}
+
+#lastbillet A{
+	font: 11px , Arial;
+	text-decoration: none; 
+	color:#000000;
+	font-weight:bold;
+}
+
+#lastbillet .titre{
+	font-family: Arial;
+	font-size:11px ;
+	font-weight:bold;
+	color:ffffff;	
+}
+#lastbillet .datelastbillet{
+	text-align:right;
+	font-style:italic;
+}
+#hotbillet{
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size:11px ;
+	text-align:justify;
+	width:100%;
+	border-width:1;
+	border-style:solid;
+	border-color:ffcfcf;
+	margin:5;
+	background-color:#ffbb00;
+}
+#hotbillet .titre{
+	font-family: Arial;
+	font-size:11px ;
+	font-weight:bold;
+	color:aa5500;	
+}
+#hotbillet .datelastbillet{
+	text-align:right;
+	font-style:italic;
+}
