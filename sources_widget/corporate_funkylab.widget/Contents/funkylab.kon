@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget version="0.1" minimumVersion="3.0" id="com.funkylab.widget.info" name="Funkylab info" image="Resources/Images/logostart.png">
+	<debug>off</debug>	
+	
+	<about-box>
+		<image>Resources/Images/about.png</image>
+	</about-box>
+
+	
+	<window title="Funkylab-info">
+		<name>mainWindow</name>
+		<width>420</width>
+		<height>700</height>
+				
+		<image src="Resources/Images/top_result.png">
+			<name>topResult</name>
+			<hOffset>0</hOffset>
+			<vOffset>88</vOffset>
+		</image>			
+			
+		<image src="Resources/Images/row1.png">
+			<name>backgroundMid</name>
+			<hOffset>0</hOffset>
+			<vOffset>103</vOffset>
+			<height>0</height>
+			<opacity>255</opacity>
+		</image>
+		
+		<image src="Resources/Images/bottom_result.png">
+			<name>bottom_result</name>
+			<hOffset>0</hOffset>
+			<vOffset>103</vOffset>
+		</image>
+		
+		<image src="Resources/Images/resize.png">
+			<name>resize_sprite</name>
+			<hOffset>171</hOffset>
+			<vOffset>103</vOffset>					
+			<tracking>rectangle</tracking>
+			<onMouseDown>
+				myOffset = system.event.y;
+			</onMouseDown>
+			<onMouseMove>
+			<![CDATA[
+				myNum = (system.event.vOffset - myOffset) - 103;
+				if (myNum<=0){
+					slidebar.opacity=0;
+				}else{
+					slidebar.opacity=255;
+				}				
+				if (myNum>0 && myNum<preferences.MAxlengthFrame.value){
+					slidebar.height=myNum;		
+					backgroundMid.height=myNum;					
+					itemList.height = myNum;					
+					bottom_result.vOffset=103+myNum;
+					resize_sprite.vOffset=bottom_result.vOffset;					
+					mainWindow.height = 188+itemList.height+15;
+					preferences.lengthFrame.value=myNum;					
+				}
+			]]>
+			</onMouseMove>
+		</image>		
+		
+		<frame name="itemList" hOffset="0" vOffset="103" width="188" height="0" vScrollBar="slidebar"/>		
+
+		<scrollbar>
+			<name>slidebar</name>
+			<hOffset>168</hOffset>
+			<vOffset>103</vOffset>			
+			<height>0</height>
+			<thumbColor>r:10; g:10; b:10</thumbColor>
+			<autoHide>true</autoHide>
+			<opacity>0</opacity>
+		</scrollbar>
+
+		<image src="Resources/Images/back_top.png">
+			<name>zonedetexte</name>
+			<width>188</width>
+			<clipRect>0,0,188,103</clipRect>
+		</image>	
+		
+		<text data="">
+			<name>etatmsg</name>
+			<hOffset>10</hOffset>
+			<vOffset>50</vOffset>			
+			<width>168</width>
+			<alignment>left</alignment>
+			<font>Arial Bold</font>
+			<size>10</size>
+			<color>#ffffff</color>
+		</text>
+
+		<text data="">
+			<name>nomprenom</name>
+			<hOffset>10</hOffset>
+			<vOffset>62</vOffset>
+			<width>168</width>
+			<alignment>left</alignment>
+			<font>Arial Bold</font>
+			<size>10</size>
+			<color>#ffffff</color>
+		</text>
+		
+		<text data="">
+			<name>email</name>
+			<hOffset>10</hOffset>
+			<vOffset>74</vOffset>
+			<width>168</width>
+			<alignment>left</alignment>
+			<font>Arial Bold</font>
+			<size>10</size>
+			<color>#ffffff</color>
+		</text>
+		
+		<text data="">
+			<name>message</name>
+			<hOffset>10</hOffset>
+			<vOffset>86</vOffset>
+			<width>168</width>
+			<alignment>left</alignment>
+			<font>Arial Bold</font>
+			<size>10</size>
+			<color>#ffffff</color>
+		</text>
+	
+		<image src="Resources/Images/nomsg.png">
+			<name>msgletter</name>
+			<hOffset>145</hOffset>
+			<vOffset>5</vOffset>
+		</image>			
+			
+	</window>	
+	<action trigger="onLoad">
+		print("login >> "+preferences.login.value);
+		print("mdp >> "+preferences.mdp.value);
+		print("nbpage >> "+preferences.nbpage.value);
+		print("url >> "+preferences.urlweb.value);
+	
+		var itemArray = new Array();
+		var url = new URL();
+
+		include ("Scripts/funkylabxml.js");
+		getXML();
+	</action>
+	
+	<action trigger="onPreferencesChanged">	
+		getXML();
+	</action>
+	
+	<timer name="checkupdate" interval="20" ticking="true">
+		<onTimerFired>
+			print("refresh");
+			getXML();
+		</onTimerFired>
+	</timer>
+	
+	<preference>	
+		<title>Login</title>
+		<name>login</name>
+		<type>text</type>
+		<defaultValue>VotreLogin</defaultValue>
+	</preference>	
+	
+	<preference>
+		<title>mot de passe</title>
+		<name>mdp</name>
+		<type>text</type>
+		<secure>yes</secure>
+		<defaultValue>test</defaultValue>
+	</preference>
+	
+	<preference>
+		<title>Adresse du site internet</title>
+		<name>urlweb</name>
+		<type>text</type>
+		<defaultValue>http://votresite</defaultValue>
+	</preference>
+
+	<preference>
+		<title>Nombre de page</title>
+		<name>nbpage</name>
+		<type>slider</type>
+		<ticks>5</ticks>
+		<tickLabel>5</tickLabel>
+		<tickLabel>10</tickLabel>
+		<tickLabel>20</tickLabel>
+		<tickLabel>30</tickLabel>
+		<tickLabel>50</tickLabel>
+		<minLength>5</minLength>
+		<maxLength>50</maxLength>
+		<defaultValue>10</defaultValue>
+	</preference>
+	
+	<preference>
+		<name>lengthFrame</name>
+		<type>text</type>
+		<hidden>true</hidden>
+		<defaultValue>200</defaultValue>
+	</preference>
+	
+	<preference>
+		<name>MAxlengthFrame</name>
+		<type>text</type>
+		<hidden>true</hidden>
+		<defaultValue>200</defaultValue>
+	</preference>
+
+	
+</widget>
