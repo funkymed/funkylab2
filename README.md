@@ -15,7 +15,7 @@ GitHub : https://github.com/funkymed/funkylab2
 Cyril Pereira http://www.cyrilpereira.com
 
 ##Doc
-See the file FunkylabV2.19.6.doc
+See the file data/doc/FunkylabV2.19.6.doc
 
 ##How to install
 
@@ -44,11 +44,11 @@ make the directory web/image in chmod 777 :
 chmod 777 web/image
 ~~~
 
-create a database called 'f2' and load the bddfunkylab2.sql file in it.
+create a database called 'f2' and load the data/dump/bddfunkylab2.sql file in it.
 
 In commande line :
 ~~~
-mysql -u root f2<bddfunkylab2.sql
+mysql -u root f2<data/dump/bddfunkylab2.sql
 ~~~~
 
 Edit the config file web/admin/config/config.bdd.url.php
@@ -67,5 +67,5 @@ and voilà you can now see the website on http://funkylab2.local
 
 ##Widget
 
-You will found the source of the widget in /sources_widget
-The widget is coded with yahoo widget engine (ex konfabulator)
+You will found the source of the widget in data/widget/sources_widget
+The widget is coded with yahoo widget engine (ex konfabulator) and can found in data/widget
