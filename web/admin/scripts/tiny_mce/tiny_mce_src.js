@@ -4,7 +4,7 @@
  * $Date: 2005/08/26 15:20:32 $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright ï¿½ 2004, Moxiecode Systems AB, All rights reserved.
  */
 
 function TinyMCE() {
@@ -211,7 +211,7 @@ TinyMCE.prototype.init = function(settings) {
 	// Only do this once
 	if (this.configs.length == 0) {
 		// Is Safari enabled
-		if (this.isSafari && this.getParam('safari_warning', true))
+		if (this.isSafari && this.getParam('safari_warning', false))
 			alert("Safari support is very limited and should be considered experimental.\nSo there is no need to even submit bugreports on this early version.");
 
 		tinyMCE.addEvent(window, "load", TinyMCE.prototype.onLoad);
