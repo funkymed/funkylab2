@@ -19,8 +19,7 @@ See the file FunkylabV2.19.6.doc
 
 ##How to install
 
-You need to make a vhost like this
-
+You need to make a vhost like this :
 ~~~
 <VirtualHost *:80>
   ServerName funkylab2.local
@@ -35,10 +34,14 @@ You need to make a vhost like this
 </VirtualHost>
 ~~~
 
-add this url to your hosts file
-
+add this url to your hosts file :
 ~~~
 funkylab2.local
+~~~
+
+make the directory web/image in chmod 777 :
+~~~
+chmod 777 web/image
 ~~~
 
 create a database called 'f2' and load the bddfunkylab2.sql file in it.
