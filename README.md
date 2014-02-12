@@ -51,6 +51,18 @@ In commande line :
 mysql -u root f2<bddfunkylab2.sql
 ~~~~
 
+Edit the config file web/admin/config/config.bdd.url.php
+~~~
+<?php
+  $host = "localhost";
+  $user = "root";
+  $pass = "";
+  $bdd  = "f2";
+  $url  = "http:/funkylab2.local/";
+  $emailpost  = "admin@funkylab.net";
+?>
+~~~
+
 and voilà you can now see the website on http://funkylab2.local
 
 ##Widget
