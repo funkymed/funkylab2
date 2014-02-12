@@ -1,4 +1,4 @@
-<?
+<?php
 	/*********************************************
 					NEWSLETTER
 	*********************************************/
@@ -87,14 +87,14 @@ if ($autorisation[0]=="1"){
 		}
 		
 	}else{
-		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 	}
 	
 
 	
 	
 }else{
-	echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+	echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 }
 
 

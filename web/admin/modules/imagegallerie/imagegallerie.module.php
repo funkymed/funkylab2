@@ -1,7 +1,7 @@
 <?php
 class imagegallerie{
 		
-	function listimage($typeselect){
+	static function listimage($typeselect){
 		$limit=6;
 		echo checkbase(BASEDEFAUT,CAT,"0","&list");	
 		
@@ -61,8 +61,8 @@ class imagegallerie{
 		
 		windowscreate(null,null,null,null,null);
 	}
-	
-	function displayvignette($row,$directory,$cat,$color){
+
+  static function displayvignette($row,$directory,$cat,$color){
 		$id=$row['id'];
 		$nom=$row['nom'];
 		if ($nom==""){
@@ -116,8 +116,8 @@ class imagegallerie{
 		";
 		return($buffer);
 	}
-	
-	function fileformat($file){	
+
+  static function fileformat($file){
 		$root=ROOT;
 		$iconeW=64;
 		$iconeH=64;

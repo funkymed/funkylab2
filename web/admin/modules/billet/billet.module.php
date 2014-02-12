@@ -1,8 +1,8 @@
 <?php
 
 class billet{
-	
-	function billetlist($page,$lettre,$orderby,$search){
+
+  static function billetlist($page,$lettre,$orderby,$search){
 		$cat=243;
 		echo checkbase(BASEDEFAUT,$cat,$page,"&list");	
 		
@@ -88,11 +88,9 @@ class billet{
 		windowscreate(null,null,null,null,null);
 		echo billet::legende();
 		echo $javascriptbillet;
-	}	
-	
-	
-	
-	function rowmenu($row,$count,$ul,$page,$lettre,$orderby,$search,$famille,$GRANDparent){
+	}
+
+  static function rowmenu($row,$count,$ul,$page,$lettre,$orderby,$search,$famille,$GRANDparent){
 		if (isset($_GET['listcategorie'])){
 			$typehidden="&listcategorie=".$_GET['listcategorie'];		
 		}else{
@@ -269,14 +267,14 @@ class billet{
 		}		
 		return($count);
 	}
-	
-	function ifparent($id){
+
+  static function ifparent($id){
 		$checkparentRES=mysql_query("SELECT * FROM billet WHERE parent=$id");
 		$checkparentROW = mysql_fetch_array($checkparentRES);
 		if($checkparentROW){ return(false); }else{ return(true); }
 	}
-	
-	function countElementSince($id,$nb){
+
+  static function countElementSince($id,$nb){
 		$resCountChild=mysql_query("SELECT id FROM billet WHERE parent=$id");
 		while ($rowCountChild = mysql_fetch_array($resCountChild)){
 			$id=$rowCountChild['id'];
@@ -286,7 +284,7 @@ class billet{
 		return($nb);		
 	}
 
-	function makejavascript($id){
+  static function makejavascript($id){
 		$javascriptbuffer="\r<script type=\"text/javascript\">\n";
 		$listcategorie=$_GET['listcategorie'];
 		$res=mysql_query("SELECT * FROM billet WHERE id='$listcategorie'");
@@ -298,8 +296,8 @@ class billet{
 		$javascriptbuffer.="</script>\n";		
 		return($javascriptbuffer);
 	}
-	
-	function childJavaScript($id,$type,$buffer){		
+
+  static function childJavaScript($id,$type,$buffer){
 		$idbillet=$id;
 
 		if (isset($_GET['id'])){
@@ -334,10 +332,8 @@ class billet{
 		return($buffer);
 		
 	}
-	
-	
-	
-	function returnIdPageFrom($id){
+
+  static function returnIdPageFrom($id){
 		$resCountParent=mysql_query("SELECT parent,type FROM billet WHERE id=$id");
 		while ($rowCountParent = mysql_fetch_array($resCountParent)){
 			$parent=$rowCountParent['parent'];
@@ -350,10 +346,8 @@ class billet{
 		}
 		return($id);
 	}
-	
-	
-	
-	function checkzone($zone,$type,$parent){
+
+  static function checkzone($zone,$type,$parent){
 		if ($zone>=1 && $type!="page" && $type!="illustration" && $type!="titre" && $type!="picflux" && $type!="traduction_page" && $type!="traduction_texte" && $type!="traduction_categorie" && $type!="traduction_titre"){
 			$restypepage=mysql_query("SELECT * FROM billet WHERE id=$parent");
 			$rowtypepage = mysql_fetch_array($restypepage);
@@ -409,9 +403,8 @@ class billet{
 		}
 		return($zone);
 	}
-	
-	
-	function billet_icone($type,$option,$zone){
+
+  static function billet_icone($type,$option,$zone){
 		switch($type){
 			case "categorie":
 				$pic="icone_categorie.gif";
@@ -583,9 +576,9 @@ class billet{
 		}
 		return($image);
 	}
-	
 
-	function legende(){		
+
+  static function legende(){
 		$buffer="";
 		
 		$legende_nom=array('option','categorie','zone','page','paragraphe');

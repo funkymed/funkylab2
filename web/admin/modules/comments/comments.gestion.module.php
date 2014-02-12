@@ -1,4 +1,4 @@
-<?
+<?php
 
 //==================================================================================================
 //	OPERATION SUR LES COMMENTAIRES
@@ -50,7 +50,7 @@ if (isset($_GET['ADDWORK'])){
 			comments::listcom($_GET['page']);	
 		}	
 	}else{
-		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 	}
 	
 	//==================================================================================================

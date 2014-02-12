@@ -1,4 +1,4 @@
-<?
+<?php
 	include "../../config/config.bdd.url.php";
 	include "../../config/root.config.php";
 	include "../../../includes/class.menu.php";
@@ -26,7 +26,7 @@ $buffer="
 		$buffer.=ereg_replace("template/",ROOT."/template/",Generate_Menu::javascriptmenu($menuid));	
 		
 	$buffer.="
-		<P align='center'><a href='javascript:closewin()'>fermer cette fenêtre</A></p>
+		<P align='center'><a href='javascript:closewin()'>fermer cette fenï¿½tre</A></p>
 	</body>
 </html>";
 

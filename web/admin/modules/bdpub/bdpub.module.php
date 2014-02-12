@@ -1,7 +1,7 @@
 <?php
 class banniere
 {
-	function listbanniere(){
+	static function listbanniere(){
 		windowscreate("BANNIERES DE PUB",null,null,"debut",0);
 		echo"
 		<FORM ACTION='index.php' method='GET'>
@@ -43,8 +43,8 @@ class banniere
 		</FORM>";
 		windowscreate(null,null,null,null,null);
 	}
-	
-	function linewindows($row,$cat,$color){
+
+  static function linewindows($row,$cat,$color){
 		
 		$id = $row['id'];
 		$url = $row['url'];

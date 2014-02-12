@@ -2,7 +2,7 @@
 
 class menu{
 		
-	function menulist (){
+	static function menulist (){
 		$cat=247;
 		echo checkbase(BASEDEFAUT,$cat,0,"&list");	
 				
@@ -65,8 +65,8 @@ class menu{
 		
 		windowscreate(null,null,null,null,null);	
 	}
-	
-	function rowmenu($row,$count,$UL){
+
+  static function rowmenu($row,$count,$UL){
 		$addurlpage="&cat=247&list";
 		$viewUL="";
 		$id=$row['id'];	
@@ -170,8 +170,8 @@ class menu{
 		
 		return($count);
 	}
-	
-	function ifparent($id){
+
+  static function ifparent($id){
 		$checkparentRES=mysql_query("SELECT * FROM menu WHERE parent=$id");
 		$checkparentROW = mysql_fetch_array($checkparentRES);
 		if($checkparentROW){ return(false); }else{ return(true); }

@@ -1,4 +1,4 @@
-<?
+<?php
 
 	include "../../config/config.bdd.url.php";
 	include "../../config/root.config.php";
@@ -30,7 +30,7 @@
 		     
 		    $id=$_GET['id'];
 		    if ($_GET['id']!="undefined"){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");		
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");		
 				$res=mysql_query("SELECT * FROM billet WHERE id='$id'");
 				$row = mysql_fetch_array($res);			
 				

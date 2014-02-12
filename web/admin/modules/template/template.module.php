@@ -1,7 +1,7 @@
 <?php
 class template{	
 	
-	function listTemplate(){
+	static function listTemplate(){
 		$buffer="";
 		$buffer.="
 		<FORM enctype=\"multipart/form-data\" action=\"index.php\" method=\"POST\">
@@ -49,9 +49,9 @@ class template{
 			print $buffer;
 		windowscreate(null,null,null,null,null);
 		
-	}	
-	
-	function checkTemplate(){		
+	}
+
+  static function checkTemplate(){
 		$resconfig=mysql_query("SELECT skinsite FROM config");
 		$rowconfig = mysql_fetch_array($resconfig);
 		$skinsite=$rowconfig['skinsite'];
@@ -96,8 +96,8 @@ class template{
 		return($buffer);
 		
 	}
-	
-	function lineTemplate($f,$nomSkin,$color,$etat,$delete){
+
+  static function lineTemplate($f,$nomSkin,$color,$etat,$delete){
 		
 		$deleteoption="<a href=\"#\" onclick=\"ConfirmChoice('Voulez vous vraiment effacer le template $nomSkin','index.php?cat=259&opskin=1&skin=$nomSkin&list'); return false;\"><img src='".SKIN."/images/delete.png' border=0></A>";
 
@@ -128,9 +128,8 @@ class template{
 		</tr>";
 		return($buffer);
 	}
-	
-	
-	function EffacerRepSkin($path){				
+
+  static function EffacerRepSkin($path){
 	    if ($path[strlen($path)-1] != "/"){
 	        $path .= "/";	
         }        

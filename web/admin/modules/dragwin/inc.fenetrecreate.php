@@ -1,4 +1,4 @@
-<?
+<?php
 function create_windows_content($titrewin,$contentwin,$templatewin,$valuemodif,$value){
 	
 		if (isset($_GET['page'])){
@@ -10,10 +10,10 @@ function create_windows_content($titrewin,$contentwin,$templatewin,$valuemodif,$
 		include "modules/dragwin/fenetre_select_option.php";	
 		
 		$buffertexte=file_get_contents($templatewin);
-		$buffertexte=ereg_replace("#SKINSITE#",ROOT."admin/".SKIN,$buffertexte);
-		$buffertexte=ereg_replace("#CAT#",$_GET['cat'],$buffertexte);
-		$buffertexte=ereg_replace("#TITREWIN#",$titrewin,$buffertexte);
-		$buffertexte=ereg_replace("#COTENUWIN#",$contentwin."&nbsp;",$buffertexte);
+		$buffertexte=str_ireplace("#SKINSITE#",ROOT."admin/".SKIN,$buffertexte);
+		$buffertexte=str_ireplace("#CAT#",$_GET['cat'],$buffertexte);
+		$buffertexte=str_ireplace("#TITREWIN#",$titrewin,$buffertexte);
+		$buffertexte=str_ireplace("#COTENUWIN#",$contentwin."&nbsp;",$buffertexte);
 		
 		$divbuffer="
 		<div name=\"wincss\" id=\"wincss\" style=\"
@@ -21,7 +21,7 @@ function create_windows_content($titrewin,$contentwin,$templatewin,$valuemodif,$
 			left: 50%;
 			top: 20%;
 	     	width: 659px;
-	     	margin-left: -330px; /* moitié de la largeur */		
+	     	margin-left: -330px; /* moitiï¿½ de la largeur */		
 		\">
 			$buffertexte
 		</div>

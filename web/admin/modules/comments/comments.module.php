@@ -1,7 +1,7 @@
 <?php
 class comments{
 	
-	function listcom($page=0){
+	static function listcom($page=0){
 		
 		$cat=242;
 		$nbcom=allcount("comments");
@@ -136,9 +136,9 @@ class comments{
 			<input type='hidden' name='page' value=$page>
 		</FORM>";
 		windowscreate(null,null,null,null,null);
-	}		
-	
-	function checkblacklist($commentaire){
+	}
+
+  static function checkblacklist($commentaire){
 		$resblack=mysql_query("SELECT * FROM blacklist");
 		$error=false;		
 		while ($rowblack = mysql_fetch_array($resblack)){   

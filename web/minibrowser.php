@@ -149,7 +149,7 @@
 		}
 		
 		
-		$buffer=ereg_replace("//","", $buffer);			
+		$buffer=str_ireplace("//","", $buffer);			
 		
 		return($buffer);
 	}

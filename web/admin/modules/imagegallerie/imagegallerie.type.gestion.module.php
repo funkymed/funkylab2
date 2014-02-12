@@ -1,4 +1,4 @@
-<?
+<?php
 	define ('TITRE', "GALLERIE");
 	define ('BASE', "photo");
 	define ('CAT', 244);
@@ -44,7 +44,7 @@
 			imagetype::listype($str);
 		}
 	}else{
-		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 	}
 	
 	function addgalerie($id,$type,$parent,$comment,$addmodif){

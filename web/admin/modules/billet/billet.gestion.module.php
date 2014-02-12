@@ -1,4 +1,4 @@
-<?
+<?php
 	/*********************************************
 						billet
 	*********************************************/
@@ -536,7 +536,7 @@
 			billet::billetlist(0,"TOUT","titre",null);
 		}			
 	}else{
-		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 	}
 	
 	

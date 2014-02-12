@@ -1,4 +1,4 @@
-<?
+<?php
 
 	include "../../config/config.bdd.url.php";
 	include "../../config/root.config.php";
@@ -36,7 +36,7 @@
 	     if(isset($_GET['id'])){
 		    $id=$_GET['id'];
 		    if ($_GET['id']!="undefined"){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");		
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");		
 				$res=mysql_query("SELECT * FROM menu WHERE id='$id'");
 				$row = mysql_fetch_array($res);					
 				$varset=$row['type'];		

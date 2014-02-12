@@ -3,7 +3,7 @@ class updater{
 	
 
 	
-	function listupdate(){
+	static function listupdate(){
 		$buffer="";
 		$buffer.="
 		<FORM enctype=\"multipart/form-data\" action=\"index.php\" method=\"POST\">
@@ -51,9 +51,9 @@ class updater{
 			print $buffer;
 		windowscreate(null,null,null,null,null);
 		
-	}	
-	
-	function ListPatch(){		
+	}
+
+  static function ListPatch(){
 
 		$buffer="";						
 		$rep= "modules/updater/patch/";
@@ -102,8 +102,8 @@ class updater{
 		return($buffer);
 		
 	}
-	
-	function lineTab($f,$name,$color,$etat,$version){		
+
+  static function lineTab($f,$name,$color,$etat,$version){
 		$deleteoption="<a href=\"#\" onclick=\"ConfirmChoice('Voulez vous vraiment effacer le patch $name','index.php?cat=239&delete=$name&list'); return false;\"><img src='".SKIN."/images/delete.png' border=0></A>";				
 		
 		switch(true){

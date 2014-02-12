@@ -1,4 +1,4 @@
-<?
+<?php
 	if (isset($_GET['listcategorie'])){
 		$typeset="&listcategorie=".$_GET['listcategorie'];		
 	}else{
@@ -28,7 +28,7 @@
 			$aldec="Affichage decroissant des pages de la categorie";
 			$altcroi="Affichage decroissant des pages de la categorie";
 			$altformnormal="Affichage des pages standard";
-			$altformresume="Affichage des pages en resumé";
+			$altformresume="Affichage des pages en resumï¿½";
 			$altformlien="Affichage des pages par uniquement leur nom";
 
 			if ($valuemodif!=null){
@@ -96,7 +96,7 @@
 										<td>Parent</td><td>$listdescategories</td>
 								 	</tr>
 								 	<tr>
-										<td colspan=\"2\">Nombre de pages visibles à la fois <input name=\"nbparpage\"  value='$nbparpage' SIZE=1 class='loginput' value='10'/></td>
+										<td colspan=\"2\">Nombre de pages visibles ï¿½ la fois <input name=\"nbparpage\"  value='$nbparpage' SIZE=1 class='loginput' value='10'/></td>
 									</tr>
 								 </table>
 							</fieldset>
@@ -114,7 +114,7 @@
 									<legend>Format</legend>
 									<p align='left'>
 										<INPUT type=radio class='noneradio' name='formatpage' value='normal' $checkformatnormal alt='$altformnormal' title='$altformnormal'>Normal (page complete)<BR>
-										<INPUT type=radio class='noneradio' name='formatpage' value='resume' $checkformatresume alt='$altformresume' title='$altformresume'>Resumé<BR>
+										<INPUT type=radio class='noneradio' name='formatpage' value='resume' $checkformatresume alt='$altformresume' title='$altformresume'>Resumï¿½<BR>
 										<INPUT type=radio class='noneradio' name='formatpage' value='lien' $checkformatlien alt='$altformlien' title='$altformlien'>Lien
 									</p>
 								</fieldset>
@@ -156,7 +156,7 @@
 			$annuler="index.php?cat=243&list$typeset";
 
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$hiddenmodif="<input type=\"hidden\" name='modifID' value='$valuemodif'>";
@@ -226,7 +226,7 @@
 			$annuler="index.php?cat=243&list$typeset";
 		
 			$altnom="Nom qui defini la page";
-			$altformat="La page serat formaté seulons votre choix";
+			$altformat="La page serat formatï¿½ seulons votre choix";
 			$altcom="Les visiteurs pourront commenter la page";
 			$altcom2="Les visiteurs ne pourront pas commenter la page";
 			$override="La page aurat un habillage definis";
@@ -386,7 +386,7 @@
 			$annuler="index.php?cat=243&list$typeset";
 
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$hiddenmodif="<input type=\"hidden\" name='modifID' value='$valuemodif'>";
@@ -526,7 +526,7 @@
 			$checkdownload="";
 			$check="";
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$nom=stripslashes($rowtypepage['nom']);
@@ -608,7 +608,7 @@
 	
 			$check="";
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$nom=stripslashes($rowtypepage['nom']);
@@ -738,8 +738,8 @@
 								
 								$contentwin.="
 								<INPUT type=radio class='noneradio' name='datemode' value='' $check1> aujourd'hui le ".decodedate(date("Y-m-d"))."<BR>
-								<INPUT type=radio class='noneradio' name='datemode' value='start' $check2> à partir de <INPUT NAME=\"debut_start\" SIZE=10 height=10 class='loginput' value='$datedujour'/><BR>
-								<INPUT type=radio class='noneradio' name='datemode' value='limite' $check3> de <INPUT NAME=\"debut_limite\" SIZE=10 height=10 class='loginput' value='$datedujour'/> à <INPUT NAME=\"fin_limite\" SIZE=10 height=10 class='loginput' value='$datelimite'/>
+								<INPUT type=radio class='noneradio' name='datemode' value='start' $check2> ï¿½ partir de <INPUT NAME=\"debut_start\" SIZE=10 height=10 class='loginput' value='$datedujour'/><BR>
+								<INPUT type=radio class='noneradio' name='datemode' value='limite' $check3> de <INPUT NAME=\"debut_limite\" SIZE=10 height=10 class='loginput' value='$datedujour'/> ï¿½ <INPUT NAME=\"fin_limite\" SIZE=10 height=10 class='loginput' value='$datelimite'/>
 								</P>
 							</fieldset>
 						</td>
@@ -824,8 +824,8 @@
 									<tr>
 										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/gauche.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='left' $check1><BR>Gauche</TD>
 										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/droite.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='right' $check2><BR>Droite</TD>
-										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/centre.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='centre' $check3><BR>Centré</TD>
-										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/justifie.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='justifie' $check4><BR>Justifié</TD>
+										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/centre.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='centre' $check3><BR>Centrï¿½</TD>
+										<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/paragraphe/justifie.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='justifie' $check4><BR>Justifiï¿½</TD>
 									</tr>
 									
 								</table>
@@ -867,7 +867,7 @@
 			$annuler="index.php?cat=243&list$typeset";
 			
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$nom=stripslashes($rowtypepage['nom']);
@@ -1288,7 +1288,7 @@
 			$annuler="index.php?cat=243&list$typeset";
 
 			if ($valuemodif!=null){
-				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+				@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 				$restypepage=mysql_query("SELECT * FROM billet WHERE id=$valuemodif");
 				$rowtypepage = mysql_fetch_array($restypepage);	
 				$hiddenmodif="<input type=\"hidden\" name='modifID' value='$valuemodif'>";
@@ -1422,7 +1422,7 @@
 											<table width=100%>
 												<tr>
 													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/topleft.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_haut_gauche' $check1><BR>Gauche</TD>
-													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/topcenter.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_haut_centre' $check2><BR>Centré</TD>
+													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/topcenter.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_haut_centre' $check2><BR>Centrï¿½</TD>
 													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/topright.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_haut_droite' $check3><BR>Droite</TD>								
 												</tr>
 											</table>
@@ -1435,7 +1435,7 @@
 											<table width=100%>
 												<tr>
 													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/botomleft.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_bas_gauche' $check4><BR>Gauche</TD>
-													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/botomcenter.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_bas_centre' $check5><BR>Centré</TD>
+													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/botomcenter.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_bas_centre' $check5><BR>Centrï¿½</TD>
 													<TD align=\"center\"><IMG SRC=\"".SKIN."/images/billet/image/botomright.gif\" width=21 height=21><BR><INPUT type=radio class='noneradio' name='alignement' value='align_bas_droite' $check6><BR>Droite</TD>								
 												</tr>
 											</table>								
@@ -1567,7 +1567,7 @@
 								<legend>Option</legend>
 								<P align='left'>
 									<input type=radio name='option' value='galerie' $check1>Afficher toute la galerie. <input name=\"nbparlignegalerie\" SIZE=1 class='loginput' style='width:20;text-align:center;' value='$nbparpage'/> par ligne<br/>
-									<input type=radio name='option' value='random' $check2><input name=\"nbparlignerandom\" SIZE=1 class='loginput' style='width:20;text-align:center;' value='$nbparpage'/> élément(s) en random.
+									<input type=radio name='option' value='random' $check2><input name=\"nbparlignerandom\" SIZE=1 class='loginput' style='width:20;text-align:center;' value='$nbparpage'/> ï¿½lï¿½ment(s) en random.
 								</P>
 							</fieldset>	
 							
@@ -1575,8 +1575,8 @@
 								<legend>Affichage</legend>
 								<P align='left'>								
 									<input type=radio name='affichage' value='lien' $check3>Afficher en lien (qui pointe sur le detail)<br/>
-									<input type=radio name='affichage' value='icone' $check4>Afficher juste en icône (sans detail)<br/>
-									<input type=radio name='affichage' value='detail' $check5>Afficher en icône avec le nom et le detail
+									<input type=radio name='affichage' value='icone' $check4>Afficher juste en icï¿½ne (sans detail)<br/>
+									<input type=radio name='affichage' value='detail' $check5>Afficher en icï¿½ne avec le nom et le detail
 								</P>
 							</fieldset>		
 						</td>
@@ -1890,13 +1890,13 @@
 									<TD valign='top'>
 										<FIELDSET>
 											<LEGEND align='left'>Information</LEGEND>
-											<p align='justify'>Pour afficher ce menu vous devez le déclarer dans votre template par son nom</p>
+											<p align='justify'>Pour afficher ce menu vous devez le dï¿½clarer dans votre template par son nom</p>
 											<center>$nom</center>
 										</FIELDSET>
 										<br/>
 										<FIELDSET>
 											<LEGEND align='left'>Type de menu</LEGEND>
-											<input type='radio' class='noneradio' name='typemenu' value=\"deroulant\" $checktype1>Déroulant<br/>
+											<input type='radio' class='noneradio' name='typemenu' value=\"deroulant\" $checktype1>Dï¿½roulant<br/>
 											<input type='radio' class='noneradio' name='typemenu' value=\"lien\" $checktype2>Lien<br/>
 											<input type='radio' class='noneradio' name='typemenu' value=\"tableau\" $checktype3>Tableau
 										</FIELDSET>																				
@@ -2015,10 +2015,10 @@
 								</fieldset>	
 								
 								<fieldset>
-									<legend>Information suplémentaire</legend>					
+									<legend>Information suplï¿½mentaire</legend>					
 									<table width='100%' border=0>
 										<tr>
-											<td align='left'>Mots clé</td><td><INPUT class='loginbox' NAME='image_mots' SIZE=50 value='$mots'></td>
+											<td align='left'>Mots clï¿½</td><td><INPUT class='loginbox' NAME='image_mots' SIZE=50 value='$mots'></td>
 										</tr>
 										<tr>
 											<td align='left'>Description</td><td><INPUT class='loginbox' NAME='desc' SIZE=50 value='$desc'></td>
@@ -2044,7 +2044,7 @@
 								
 								<fieldset>
 									<legend>Information commercial</legend>	
-									PLIMUS <INPUT NAME='image_plimus' SIZE=30 VALUE='$plimus'> PRIX <INPUT NAME='image_prix' SIZE=4 value='$prix'> €
+									PLIMUS <INPUT NAME='image_plimus' SIZE=30 VALUE='$plimus'> PRIX <INPUT NAME='image_prix' SIZE=4 value='$prix'> ï¿½
 								</fieldset>
 								
 							</td>
@@ -2222,7 +2222,7 @@
 									</TR>
 									<TR>
 										<TD align='left'>Nom</td><td><INPUT class='userbox' NAME='add_nom' SIZE=20 value='$nom'></TD>
-										<TD align='left'>Prénom</td><td><INPUT class='userbox' NAME='add_prenom' SIZE=20 value='$prenom'></TD>	
+										<TD align='left'>Prï¿½nom</td><td><INPUT class='userbox' NAME='add_prenom' SIZE=20 value='$prenom'></TD>	
 									</TR>
 									<TR>
 										<TD align='left'> Email</td><td><INPUT class='userbox' NAME='add_email' SIZE=20 value='$email'><br/></TD>
@@ -2260,7 +2260,7 @@
 											<td><input name='check_comments' class='noneradio' type=checkbox $check_comments></td><td>Gestionnaire de commentaire de la blacklist</td>
 										</tr>
 										<tr>
-											<td><input name='check_restrictedbillet' class='noneradio' type=checkbox $check_restrictedbillet></td><td>Restraindre à une categorie $listdescategories
+											<td><input name='check_restrictedbillet' class='noneradio' type=checkbox $check_restrictedbillet></td><td>Restraindre ï¿½ une categorie $listdescategories
 											</td>
 										</tr>
 										<tr>
@@ -2334,8 +2334,8 @@
 							<fieldset>
 								<legend><img src='".SKIN."/images/alert.gif' align='middle'>Important</legend>
 								<P align='left'>
-									La blacklist permet de bloquer un mot, des combinaisons de mots, ou des bouts de phrase. Dans la partie configuration de l'administration vous pouvez indiquer de filtrer les commentaires à partir de l'écriture de celui ci, ou alors de le faire par vous meme à partir d'ici.<br/>
-									Il est également possible de filtrer les tags HTML.
+									La blacklist permet de bloquer un mot, des combinaisons de mots, ou des bouts de phrase. Dans la partie configuration de l'administration vous pouvez indiquer de filtrer les commentaires ï¿½ partir de l'ï¿½criture de celui ci, ou alors de le faire par vous meme ï¿½ partir d'ici.<br/>
+									Il est ï¿½galement possible de filtrer les tags HTML.
 									
 								</P>
 							</fieldset>
@@ -2488,7 +2488,7 @@
 					<tr>
 						<td valign=\"top\" align=\"center\">
 							<fieldset>
-								<legend>Bannière de pub</legend>
+								<legend>Banniï¿½re de pub</legend>
 								<P align='left'>
 									URL <INPUT NAME=\"url\" SIZE=60 class='loginput' value=\"$url\"/>
 								</P>
@@ -2501,7 +2501,7 @@
 							<fieldset>
 								<legend><img src='".SKIN."/images/alert.gif' align='middle'>Important</legend>
 								<P align='left'>
-									Veuillez utiliser un même format pour l'enssemble de vos bandeaux publicitaire (exemple : 468x60 pixels).
+									Veuillez utiliser un mï¿½me format pour l'enssemble de vos bandeaux publicitaire (exemple : 468x60 pixels).
 									
 								</P>
 							</fieldset>
@@ -2562,7 +2562,7 @@
 					<tr>
 						<td valign=\"top\" align=\"center\">
 							<fieldset>
-								<legend>Email abonnée</legend>
+								<legend>Email abonnï¿½e</legend>
 								<table>
 									<tr>
 										<td>EMAIL <INPUT NAME=\"email\" SIZE=20 class='loginput' value=\"$email\"/></td>
@@ -2575,7 +2575,7 @@
 							<fieldset>
 								<legend><img src='".SKIN."/images/alert.gif' align='middle'>Attention</legend>
 								<P align='left'>
-									Afin de valider l'email, quand vous validerez les modifications votre nom et prénom seront enregistrés à la place de l'IP. La date d'enregistrement de l'email serat mis à la date d'aujourd'hui.
+									Afin de valider l'email, quand vous validerez les modifications votre nom et prï¿½nom seront enregistrï¿½s ï¿½ la place de l'IP. La date d'enregistrement de l'email serat mis ï¿½ la date d'aujourd'hui.
 								</P>
 							</fieldset>
 							

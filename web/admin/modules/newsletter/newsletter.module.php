@@ -5,7 +5,7 @@ class newsletter
 	//	EMAILS
 	//==================================================================================================
 	
-	function checkinfo($mail,$date,$IPcreation){
+	static function checkinfo($mail,$date,$IPcreation){
 		/***** TEST EMAIL VALIDE ****/
 		if (verifmail($mail)==false){
 			return(2);			
@@ -26,8 +26,8 @@ class newsletter
 			}
 		}
 	}
-	
-	function listmail(){
+
+  static function listmail(){
 		
 		echo "<br/>
 		<table align=\"center\" cellspacing=\"0\" cellpadding=\"0\" class=\"loginbox\" width=\"250\">
@@ -95,8 +95,8 @@ class newsletter
 		</FORM>";
 		windowscreate(null,null,null,null,null);
 	}
-	
-	function linewindows($id,$mail,$date,$IPcreation,$cat,$color,$error){
+
+  static function linewindows($id,$mail,$date,$IPcreation,$cat,$color,$error){
 		$disable="";
 		$check="";
 		if ($error==null){
@@ -154,8 +154,8 @@ class newsletter
 	//==================================================================================================
 	//	NEWSLETTER
 	//==================================================================================================
-	
-	function listletter(){		
+
+  static function listletter(){
 		
 		$txt="<table cellpadding=0 cellspacing=0 border=0><tr><td class=\"onglet_over\"><a href='index.php?cat=252&listmail'>Emails</a></td><td class=\"onglet\">Newsletters</td></tr></table>";
 		
@@ -245,8 +245,8 @@ class newsletter
 	//==================================================================================================
 	//	ENVOIS LA NEWSLETTER
 	//==================================================================================================
-	
-	function sendnewsletter($id){
+
+  static function sendnewsletter($id){
 		windowscreate("ENVOIS NEWSLETTER",null,null,"debut",0);
 		echo"
 			<IFRAME  width=\"100%\" 

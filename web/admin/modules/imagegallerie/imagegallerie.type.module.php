@@ -1,7 +1,7 @@
 <?php
 class imagetype
 {
-	function listype(){	
+	static function listype(){
 		
 		echo checkbase(BASEDEFAUT,245,"0","&list");	
 		
@@ -62,10 +62,10 @@ class imagetype
 		<input type='hidden' name='list'>
 		<FROM>";
 		windowscreate(null,null,null,null,null);
-	}	
-	
-	
-	function viewrow($row,$count,$UL){
+	}
+
+
+  static function viewrow($row,$count,$UL){
 		$viewUL="";
 		$id=$row['id'];
 		$parent=$row['parent'];
@@ -138,8 +138,8 @@ class imagetype
 		
 		return($count);
 	}
-	
-	function ifparent($id){
+
+  static function ifparent($id){
 		$checkparentRES=mysql_query("SELECT * FROM type_photo WHERE parent=$id");
 		$checkparentROW = mysql_fetch_array($checkparentRES);
 		if($checkparentROW){ return(false); }else{ return(true); }

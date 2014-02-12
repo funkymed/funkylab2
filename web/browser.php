@@ -1,4 +1,4 @@
-<? 	
+<?php
 	header("Content-type: text/html"); 	
 	header("Content-Disposition: filename=index.php\r\n\r\n"); 
 	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");             
@@ -8,8 +8,8 @@
 	
 	session_start();
 	require_once('config.php');	
-	$basetowork=mysql_connect($host,$user,$pass) or die("Impossible de se connecter à la base de données");
-	@mysql_select_db("$bdd") or die("Impossible de se connecter à la base de données");
+	$basetowork=mysql_connect($host,$user,$pass) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
+	@mysql_select_db("$bdd") or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 
 	/**********************************************************************
 	|						MEGABROWSER									  |		
@@ -117,16 +117,16 @@
 	
 	$buffertexte=file_get_contents("megabrowser/template/template.html");
 	
-	$buffertexte=ereg_replace("#TITRE#","MEGABROWSER",$buffertexte);
-	$buffertexte=ereg_replace("#VERSION#","V".$versionmegabrowser,$buffertexte);
-	$buffertexte=ereg_replace("#FORMULAIRES#",$buffer0,$buffertexte);
-	$buffertexte=ereg_replace("#RESULTAT#",$buffer,$buffertexte);
-	$buffertexte=ereg_replace("#CREDITS#",$credit,$buffertexte);
+	$buffertexte=str_ireplace("#TITRE#","MEGABROWSER",$buffertexte);
+	$buffertexte=str_ireplace("#VERSION#","V".$versionmegabrowser,$buffertexte);
+	$buffertexte=str_ireplace("#FORMULAIRES#",$buffer0,$buffertexte);
+	$buffertexte=str_ireplace("#RESULTAT#",$buffer,$buffertexte);
+	$buffertexte=str_ireplace("#CREDITS#",$credit,$buffertexte);
 			
 	$timearrive= get_micro_time();
 	$temps=number_format($timearrive-$timedepart,2);
 	
-	$buffertexte=ereg_replace("#TIMECODE#","<BR>Generé en $temps secondes",$buffertexte);
+	$buffertexte=str_ireplace("#TIMECODE#","<BR>Generï¿½ en $temps secondes",$buffertexte);
 	
 	$autorisation=$_SESSION["funkylab_autorisation"];
 	if ($autorisation[4]=="1"){

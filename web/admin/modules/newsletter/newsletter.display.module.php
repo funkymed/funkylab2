@@ -1,4 +1,4 @@
-<?
+<?php
 	echo "
 	<script LANGUAGE='JavaScript'>			
 		function closewin()
@@ -81,7 +81,7 @@
 				<tr>
 					<td>
 						<br/>
-						<p class='newsletterdate'>LES $lastbillet DERNIERES PAGE AJOUTÉE</p>";
+						<p class='newsletterdate'>LES $lastbillet DERNIERES PAGE AJOUTï¿½E</p>";
 						$mail.=last_billet_light($lastbillet);					
 						$mail.="
 					</td>		
@@ -92,7 +92,7 @@
 			<tr>
 				<td>
 					<hr class=\"hrstyle\">
-					<p align='center'>Si vous desirez vous desabonner entrez à nouveau votre email dans la zone \"newsletter\" sur notre site <a href='".URLSITE."' target='_blank'>".URLSITE."</a></P>
+					<p align='center'>Si vous desirez vous desabonner entrez ï¿½ nouveau votre email dans la zone \"newsletter\" sur notre site <a href='".URLSITE."' target='_blank'>".URLSITE."</a></P>
 				</td>		
 			</tr>		
 		</table>";
@@ -111,7 +111,7 @@
 		$fp = @fopen(ARCHIVE."/".$filearchive.".html","x+");
 		
 		if ($fp==false){
-			echo "Le fichier est déjà disponible dans les archives";
+			echo "Le fichier est dï¿½jï¿½ disponible dans les archives";
 		}else{
 			fseek($fp,0);
 			fputs($fp,$mail);
@@ -119,7 +119,7 @@
 			@chmod($fp,0644);
 		}
 				
-		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 		$res=mysql_query("SELECT * FROM mail_newsletter ORDER BY id DESC");
 		
 		$mailto=array();
@@ -194,7 +194,7 @@
 
 	function last_billet_light($nb){
 		$buffer="";
-		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 		$res=mysql_query("SELECT * FROM billet WHERE type='page' ORDER BY date_debut DESC LIMIT $nb");
 		while ($row = mysql_fetch_array($res)){ 
 			$id=$type=$row['id'];
@@ -224,7 +224,7 @@
 	}	
 	
 	function cheminfer($cheminfer,$id){
-		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter à la base de données");
+		@mysql_select_db(BASEDEFAUT) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 		$resFER=mysql_query("SELECT nom,id,parent FROM billet WHERE id='$id'");	
 		$rowFER = mysql_fetch_array($resFER);
 		$nomFER=strtoupper(stripslashes($rowFER['nom']));
@@ -255,9 +255,9 @@
 		$test=@mail($toaddress, $subject, $message, $headers);
 		
 		if ($test==1){
-			echo "Email envoyé à ",$toaddress,"<br/>\n" ;
+			echo "Email envoyï¿½ ï¿½ ",$toaddress,"<br/>\n" ;
 		}else{
-			echo "<b>Email rejeté ",$toaddress,"</b><br/>\n" ;
+			echo "<b>Email rejetï¿½ ",$toaddress,"</b><br/>\n" ;
 		}
 	}	
 	

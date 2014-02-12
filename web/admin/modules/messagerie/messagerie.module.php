@@ -2,7 +2,7 @@
 
 class messagerie
 {
-	function listmesssage(){
+	static function listmesssage(){
 		windowscreate("MESSAGERIE",null,null,"debut",0);
 			echo "
 			<FORM ACTION='index.php' method='GET' >
@@ -79,8 +79,8 @@ class messagerie
 			</FORM>";
 		windowscreate(null,null,null,null,null);
 	}
-	
-	function silu($lu){
+
+  static function silu($lu){
 		if ($lu=="oui"){
 			$file="maillu.gif";
 		}else{
@@ -137,9 +137,9 @@ class messagerie
 		}
 		$buffer.= "</SELECT>";
 		return($buffer);
-	}	
-		
-	function confirmsendmessage($iduser,$recepteur,$message,$datenow,$objet,$lu){
+	}
+
+  static function confirmsendmessage($iduser,$recepteur,$message,$datenow,$objet,$lu){
 		$query="INSERT INTO messagerie (id,fromqui,recepteur,date_envois,objet,message,lu) VALUES ('','$iduser','$recepteur','$datenow','$objet','$message','$lu')";
 		$resultat=mysql_query($query);						
 		if ($resultat=="1"){ echo "<P align='center'>Message envoy�.</P>"; }else{ echo "<P align='center'>Erreur !</P>"; }		

@@ -745,6 +745,8 @@
 	//----------------------------------------------------------------
 
 		function checkbase($base,$cat,$page,$addurl){
+      $message='';
+      /*
 		$table = mysql_list_tables($base);
 		$req = mysql_query('SHOW TABLE STATUS');
 		$message="";
@@ -759,6 +761,7 @@
 		         <a href='index.php?optimisesql=$base&page=$page&cat=".$cat.$addurl."'>Optimiser la base</A></P><BR>";
 		    }
 		}
+      */
 		return($message);
 	}
 

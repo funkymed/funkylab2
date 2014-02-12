@@ -1,4 +1,4 @@
-<?
+<?php
 	/*********************************************
 						MENU
 	*********************************************/
@@ -126,7 +126,7 @@
 		if ($autorisation[3]=="1"){
 			menu::menulist();
 		}else{
-			echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+			echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 		}
 	}	
 	

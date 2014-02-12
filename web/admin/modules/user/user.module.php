@@ -1,7 +1,7 @@
 <?php
 class Admin_user{
 	
-	function listuser(){
+	static function listuser(){
 		
 		echo checkbase(BASEDEFAUT,255,"0","&list");	
 		
@@ -59,8 +59,8 @@ class Admin_user{
 		</FORM>";
 		windowscreate(null,null,null,null,null);
 	}
-	
-	function linewindows($id,$login,$pass,$nom,$prenom,$email,$datecreation,$lastconnexion,$cat,$color){
+
+  static function linewindows($id,$login,$pass,$nom,$prenom,$email,$datecreation,$lastconnexion,$cat,$color){
 			if ($color % 2 == 0) {
 				 $class="windcontenu"; 
 			}else{ 

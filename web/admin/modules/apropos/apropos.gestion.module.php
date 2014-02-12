@@ -1,4 +1,4 @@
-<?	
+<?php
 	
 //--------------------------------------------------------------------		
 // CREDIT
@@ -20,9 +20,9 @@
 
 	windowscreate("L. A. M. P.",null,null,"debut",null);
 		echo
-		"<p>Ce site fonctionne a été réalisé avec la technologie <a href='http://www.onlamp.com/'>LAMP</a> (Linux, Apache, MySQL & PHP)<br/>
+		"<p>Ce site fonctionne a ï¿½tï¿½ rï¿½alisï¿½ avec la technologie <a href='http://www.onlamp.com/'>LAMP</a> (Linux, Apache, MySQL & PHP)<br/>
 		<a href='http://www.linux.com/'><IMG SRC='image/linux.gif'  border=0></a><a href='http://www.apache.org/'><IMG SRC='image/apache.gif' border=0></a><a href='http://www.mysql.com/'><IMG SRC='image/mysql.gif' border=0></a><a href='http://www.php.net/'><IMG SRC='image/php.gif' border=0></a><br/>
-		Optimisé pour Firefox<br/>
+		Optimisï¿½ pour Firefox<br/>
 		<a href='http://www.mozilla-europe.org/fr/products/firefox/'><IMG SRC='image/firefox.gif' border=0></a></p>";
 	windowscreate(null,null,null,null,null);
 	
@@ -30,10 +30,10 @@
 // CREDIT SUP
 //--------------------------------------------------------------------
 
-	windowscreate("Crédit suplémentaire",null,null,"debut",null);
+	windowscreate("Crï¿½dit suplï¿½mentaire",null,null,"debut",null);
 		echo
-		"JSCookMenu et JSCookTree © Copyright 2002-2005 par Heng Yuan<br/>
-		TinyMCE Copyright © 2004 Moxiecode Systems AB<br/>		
+		"JSCookMenu et JSCookTree ï¿½ Copyright 2002-2005 par Heng Yuan<br/>
+		TinyMCE Copyright ï¿½ 2004 Moxiecode Systems AB<br/>		
 		<a href=\"http://tinymce.moxiecode.com?id=powered_by_tinymce_mini\"><img src=\"http://tinymce.sourceforge.net/buttons/tinymce_button.png\" border=\"0\" width=\"80\" height=\"15\" alt=\"Powered by TinyMCE\" /></a></p>
 		";
 	windowscreate(null,null,null,null,null);
