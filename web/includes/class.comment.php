@@ -1,4 +1,4 @@
-<?
+<?php
 	class comment{
 		
 		function add_com($add_pseudo,$add_mail,$add_commentaire,$idbillet){
@@ -20,7 +20,7 @@
 		  		
 		  	if($add_pseudo==""){
 			  	$error=true;
-			  	$message[]="Vous n'avez pas entré de pseudo";
+			  	$message[]="Vous n'avez pas entrï¿½ de pseudo";
 		  	}
 		  	if ($add_mail==""){
 			  	$error=true;
@@ -44,9 +44,9 @@
 		  	}
 		  	
 			if ($error==true){ 
-				$msgtxt.=  "<P class=\"titrebox\">Votre commentaire n'a pas été envoyé car il contient des erreurs</P>";			
+				$msgtxt.=  "<P class=\"titrebox\">Votre commentaire n'a pas ï¿½tï¿½ envoyï¿½ car il contient des erreurs</P>";			
 			}else{
-				$msgtxt.=  "<P class=\"titrebox\">votre commentaire est enregistré</P>";
+				$msgtxt.=  "<P class=\"titrebox\">votre commentaire est enregistrï¿½</P>";
 				comment::add_com($add_pseudo,$add_mail,$add_commentaire,$idbillet);			
 			}
 		  	for ($xx=0;$xx<=count($message)-1;$xx++){

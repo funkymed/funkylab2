@@ -1,4 +1,4 @@
-<?
+<?php
 class imagegallerie{
 		
 	function listimage($typeselect){
@@ -99,7 +99,7 @@ class imagegallerie{
 				}		
 		}	
 		
-	$delete="<a href=\"#\" onclick=\"ConfirmChoice('Voulez vous vraiment effacer l\'élément : $nom ?','index.php?cat=".CAT."&select=2&id=$id&list&listgalerie=$typeset'); return false;\"><IMG SRC='".SKIN."/images/delete.png' border=0></A>";
+	$delete="<a href=\"#\" onclick=\"ConfirmChoice('Voulez vous vraiment effacer l\'ï¿½lï¿½ment : $nom ?','index.php?cat=".CAT."&select=2&id=$id&list&listgalerie=$typeset'); return false;\"><IMG SRC='".SKIN."/images/delete.png' border=0></A>";
 			
 		$buffer="
 		<fieldset class='$class' onmouseover=\"className='FIELDSETOVER'\" onmouseout=\"className='$class'\">
@@ -137,7 +137,7 @@ class imagegallerie{
 		$datemodifbufer=@date ("Y-m-d/H:i:s", filemtime($dirset."/".$file));
 		
 		$datemodifbufer=explode("/",$datemodifbufer);
-		$datemodif=decodedate($datemodifbufer[0])." à ".$datemodifbufer[1];
+		$datemodif=decodedate($datemodifbufer[0])." ï¿½ ".$datemodifbufer[1];
 		
 		$fileurlencode=codefilename(urlencode($file));
 		
@@ -317,7 +317,7 @@ function createthumb($file,$originalfile,$dir,$size){
 		imagecopyresized($image_dest, $image_src, 0, 0, 0, 0,$thumbW,$thumbH, $width, $height);
 		
 		if(!imagejpeg($image_dest,$dir."/".$file)){
-			echo "la création de la vignette a echouée pour l'image $image";
+			echo "la crï¿½ation de la vignette a echouï¿½e pour l'image $image";
 			exit;
 		} 
 		@chmod($dir."/".$file,0644);

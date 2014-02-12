@@ -47,7 +47,7 @@
 			banniere::listbanniere();
 		}	
 	}else{
-		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ça.</P>";
+		echo "<P align='center' class='ALERTEDOUBLON'>Vous n'avez pas l'autorisation de l'administrateur pour faire ï¿½a.</P>";
 	}
 	
 	//==================================================================================================
@@ -63,15 +63,6 @@
 		}
 		
 		$resultat=@mysql_query($query);
-		/*
-		if ($resultat=="1"){ 
-			echo "<P>c bon</P>"; 	
-		}else{ 
-			echo mysql_error()."<BR><BR>";
-			echo $query;			
-			echo "<P>ERREUR</P>"; 
-		}
-		*/
-	}	
+	}
 			
 ?>

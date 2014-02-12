@@ -1,4 +1,4 @@
-<?
+<?php
 //==================================================================================================
 //	LANCEMENT PDF
 //==================================================================================================
@@ -13,8 +13,8 @@ ob_start();
 	define ("BASEDEFAUT", $bdd);
 	define ("ROOT",$url);
 	
-	$basetowork=mysql_connect($host,$user,$pass) or die("Impossible de se connecter à la base de données");
-	@mysql_select_db("$bdd") or die("Impossible de se connecter à la base de données");
+	$basetowork=mysql_connect($host,$user,$pass) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
+	@mysql_select_db("$bdd") or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 
 	//==================================================================================================
 	//	CONFIG

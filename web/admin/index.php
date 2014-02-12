@@ -1,19 +1,19 @@
-<? 
-	header("Content-type: text/html"); 	
-	header("Content-Disposition: filename=index.php\r\n\r\n"); 
+<?php
+	header("Content-type: text/html");
+	/*header("Content-Disposition: filename=index.php\r\n\r\n");
 	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");             
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); 
 	header("Cache-Control: no-cache, must-revalidate"); 
 	header("Pragma: no-cache");  
-	
+	*/
 	session_start();
 
 	/**************************************************
 	
-		NOM    : FUNKYLAB V2.03
+		NOM    : FUNKYLAB V2.19.7
 		DATE   : 11/2005
 		AUTEUR : Cyril PEREIRA 
-		MAIL   : cyril.pereira@gmail.Com
+		MAIL   : cyril.pereira@gmail.com
 		SITE   : http://www.cyrilpereira.com
 		
 	**************************************************/
@@ -29,8 +29,7 @@
 	}	
 	require_once('config/config.bdd.url.php');
 	require_once('config/root.config.php');
-?>
-<HTML>
+?><html>
 	<head>
 		<TITLE>Funkylab V2</TITLE>
 		
@@ -38,7 +37,7 @@
 		<script language="JavaScript" src="scripts/ThemeOffice/theme.js"></script>
 		<script language="JavaScript" src="scripts/tiny_mce/tiny_mce.js"></script>
 		
-		<? include "include/ajax.minibrowser.php"; ?>
+		<?php include "include/ajax.minibrowser.php"; ?>
 	
 		<script language="javascript" type="text/javascript">
 			tinyMCE.init({
@@ -79,7 +78,7 @@
 		
 		</script>
 
-		<?
+		<?php
 		echo "
 		<script LANGUAGE='JavaScript'>
 			function open_newpopup(bUrl, bName, bWidth, bHeight, bResize)
@@ -125,9 +124,9 @@
 		<link rel="stylesheet" href="help/ThemeLibrary/theme.css" type="text/css">
 		<script language="JavaScript" src="help/ThemeLibrary/theme.js"></script>	
 		
-	</head>	
-	
-	<?
+	</head>
+
+  <?php
 		if (isset($_GET['cat'])){
 			switch($_GET['cat']){
 				case 247:
@@ -141,14 +140,14 @@
 	?>
 	
 	
-	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" <? echo $initindex; ?> >	
-		<?	
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" <?php echo $initindex; ?> >
+  <?php
 			include SKIN."/index.php";
 			$timearrive= get_micro_time();
 			$temps=$timearrive-$timedepart;
 			$temps=number_format($timearrive-$timedepart,2);
-			echo "<P align='center'>temps pour créer la page : ",$temps," secondes<br/>
-			optimisé pour <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'>Firefox</a><br/>
+			echo "<P align='center'>temps pour crï¿½er la page : ",$temps," secondes<br/>
+			optimisï¿½ pour <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'>Firefox</a><br/>
 			<a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'><img src='",SKIN,"/images/firefox.gif' border=0></a></P>
 			";
 			mysql_close($basetowork);

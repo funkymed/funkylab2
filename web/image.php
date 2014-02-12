@@ -1,4 +1,4 @@
-<?
+<?php
 
 if (isset($_GET['image'])){
 	header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT'); 

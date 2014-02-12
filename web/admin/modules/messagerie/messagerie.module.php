@@ -1,4 +1,4 @@
-<?
+<?php
 
 class messagerie
 {
@@ -89,7 +89,7 @@ class messagerie
 		echo "<IMG SRC='scripts/ThemeOffice/",$file,"' border=0>";
 	}
 	
-	function checkmail(){
+	static function checkmail(){
 		$iduser=$_SESSION["funkylab_id"];
 		$nb=messagerie::countmessagenonlu("messagerie","recepteur",$iduser);
 		if ($nb>=1){
@@ -102,7 +102,7 @@ class messagerie
 		}
 	}
 	
-	function countmessagenonlu($base,$colonne,$queltype){
+	static function countmessagenonlu($base,$colonne,$queltype){
 		$txt="SELECT * FROM $base WHERE $colonne=$queltype AND lu='non'";
 		$res_prod=mysql_query($txt);	
 		$nb=0;
@@ -110,7 +110,7 @@ class messagerie
 		return($nb);
 	}	
 
-	function checkifread($id){
+	static function checkifread($id){
 		$res=mysql_query("SELECT * FROM messagerie WHERE id=$id");
 		$row = mysql_fetch_array($res);
 		$lu=$row['lu'];
@@ -120,7 +120,7 @@ class messagerie
 		}	
 	}
 
-	function list_contact_mail($base,$idselect,$nomselect,$from){
+	static function list_contact_mail($base,$idselect,$nomselect,$from){
 		$buffer="";
 		$res=mysql_query("SELECT * FROM $base");
 		$buffer.= "\n<SELECT NAME='recepteur' class='listselect'>\n";	
@@ -142,7 +142,7 @@ class messagerie
 	function confirmsendmessage($iduser,$recepteur,$message,$datenow,$objet,$lu){
 		$query="INSERT INTO messagerie (id,fromqui,recepteur,date_envois,objet,message,lu) VALUES ('','$iduser','$recepteur','$datenow','$objet','$message','$lu')";
 		$resultat=mysql_query($query);						
-		if ($resultat=="1"){ echo "<P align='center'>Message envoyé.</P>"; }else{ echo "<P align='center'>Erreur !</P>"; }		
+		if ($resultat=="1"){ echo "<P align='center'>Message envoyï¿½.</P>"; }else{ echo "<P align='center'>Erreur !</P>"; }		
 	}	
 }
 

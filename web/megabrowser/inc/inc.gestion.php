@@ -1,4 +1,4 @@
-<?
+<?php
 
 	$autorisation_session_check = $_SESSION["funkylab_autorisation"];		
 	$buffer="";
@@ -15,7 +15,7 @@
 				if ($autorisation_session_check[2]=="1"){
 					$buffer.="
 					<td class='onglet' onmouseover=\"className='ongletOVER'\" onmouseout=\"className='onglet'\">
-						<a href='$filephp?dir=$dirset$addurl&boxgalerie'>Ajouter à une galerie</a>
+						<a href='$filephp?dir=$dirset$addurl&boxgalerie'>Ajouter ï¿½ une galerie</a>
 					</td>";
 				}
 			$buffer.="
@@ -156,7 +156,7 @@
 			$datemodifbufer=date ("Y-m-d/H:i:s", filemtime($dirset."/".$file));
 			
 			$datemodifbufer=explode("/",$datemodifbufer);
-			$datemodif=decodedate($datemodifbufer[0])." à ".$datemodifbufer[1];
+			$datemodif=decodedate($datemodifbufer[0])." ï¿½ ".$datemodifbufer[1];
 			
 			$fileurlencode=codefilename(urlencode($file));
 			
@@ -293,7 +293,7 @@
 			}
 			
 			$buffer.="<br/><br/>
-						<a href=\"".$dirset.$file."\" target=\"_blank\">Télécharger</a>
+						<a href=\"".$dirset.$file."\" target=\"_blank\">Tï¿½lï¿½charger</a>
 					<br/><br/>
 					$filesizedisp ko
 					</TD></TR></TABLE>

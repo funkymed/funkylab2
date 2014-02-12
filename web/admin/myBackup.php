@@ -1,4 +1,4 @@
-<? 	
+<?php
 	session_start();
 	
 	include "config/config.bdd.url.php"; 
@@ -137,10 +137,10 @@
 		<link rel=\"stylesheet\" href=\"".SKIN."/css/theme.css\" type=\"text/css\">
 		</head>
 			<body>";
-			windowscreate("GESTIONNAIRE DE BASE DE DONNÉE",null,null,"debut",0);	
+			windowscreate("GESTIONNAIRE DE BASE DE DONNï¿½E",null,null,"debut",0);	
 			echo "
 				<fieldset>
-					<legend>Sauvegarder la base de donnée dans son etat actuel</legend>
+					<legend>Sauvegarder la base de donnï¿½e dans son etat actuel</legend>
 					<form method='Post' Action=''>
 						<P align='center'>
 							<input type='submit' value='Sauvegarder'>
@@ -159,7 +159,7 @@
 					</form>
 				</fieldset>
 				<fieldset>
-					<legend>Selectionner le fichier à utiliser pour restaurer le base</legend>
+					<legend>Selectionner le fichier ï¿½ utiliser pour restaurer le base</legend>
 						<form method='Post' Action=''>
 							<p align='center'>";
 								echo ListBackup();
@@ -168,7 +168,7 @@
 						</form>
 				</fieldset>
 				<fieldset>
-					<legend>Telecharger un export Xml de la base de donnée</legend>
+					<legend>Telecharger un export Xml de la base de donnï¿½e</legend>
 						<form method='Post' Action=''>
 							<p align='center'>";
 								echo ListBackup();
@@ -218,7 +218,7 @@
 			$fp = @fopen("backup/".date("YmdHis")."_".$bdd.".xml","w+");
 		
 			if ($fp==false){
-				echo "<center>Le fichier existe déjà.";
+				echo "<center>Le fichier existe dï¿½jï¿½.";
 				echo "<p><a href=\"backup/".date("YmdHis")."_".$bdd.".xml\">voir le fichier</a></p></center>";
 			}else{
 				fseek($fp,0);
@@ -227,7 +227,7 @@
 				@chmod($fp,0777);	
 			}			
 		}else{
-			echo "Erreur : impossible de lister les bases de données\n";
+			echo "Erreur : impossible de lister les bases de donnï¿½es\n";
 			echo 'Erreur MySQL : ' . mysql_error();
 			exit;
 		}

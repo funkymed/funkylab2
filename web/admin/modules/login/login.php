@@ -1,4 +1,4 @@
-<?
+<?php
 if (isset($_SESSION["funkylab_login"])){
 }else{
 	
@@ -48,8 +48,8 @@ function erreurlogin(){
 			<TD width=200>
 				<center><IMG SRC='",SKIN,"/images/security.png'></center>
 				<P>Bienvenue dans l'administration du site</P>
-				<P>Utilisez un nom d'utilisateur et un mot de passe valides pour obtenir l'accès à la console d'administration.</P>
-				<P>Si vous avez oublié votre mot de passe cliquez <a href='index.php?losepass'>ici</A>
+				<P>Utilisez un nom d'utilisateur et un mot de passe valides pour obtenir l'accï¿½s ï¿½ la console d'administration.</P>
+				<P>Si vous avez oubliï¿½ votre mot de passe cliquez <a href='index.php?losepass'>ici</A>
 			</TD>
 			<TD class='titrelogin'>
 				<fieldset>

@@ -1,4 +1,4 @@
-<?
+<?php
 class template{	
 	
 	function listTemplate(){
@@ -74,15 +74,15 @@ class template{
 						$ext=strtolower(strrchr($f, '.'));
 						$repCheck=substr($f,0,strlen($f)-strlen($ext));
 						if (file_exists($rep.$repCheck)){
-							$etat="<a href=\"index.php?cat=259&list&opskin=2&skin=".$repCheck."\">Selectionner</a>  - <a href=\"index.php?cat=259&list&opskin=4&skin=".$repCheck."\">Désinstaller</a> - <a href=\"".$rep.$f."\">Télécharger</a>";
+							$etat="<a href=\"index.php?cat=259&list&opskin=2&skin=".$repCheck."\">Selectionner</a>  - <a href=\"index.php?cat=259&list&opskin=4&skin=".$repCheck."\">Dï¿½sinstaller</a> - <a href=\"".$rep.$f."\">Tï¿½lï¿½charger</a>";
 							$delete=1;
 						}else{
-							$etat="<a href=\"index.php?cat=259&list&opskin=3&skin=".$repCheck."\">Installer</a> - <a href=\"".$rep.$f."\">Télécharger</a>";
+							$etat="<a href=\"index.php?cat=259&list&opskin=3&skin=".$repCheck."\">Installer</a> - <a href=\"".$rep.$f."\">Tï¿½lï¿½charger</a>";
 							$delete=3;
 						}
 						
 						if ($repCheck==$skinsite){
-							$etat="Template séléctionné - <a href=\"".$rep.$f."\">Télécharger</a>";
+							$etat="Template sï¿½lï¿½ctionnï¿½ - <a href=\"".$rep.$f."\">Tï¿½lï¿½charger</a>";
 							$delete=2;
 						}
 						

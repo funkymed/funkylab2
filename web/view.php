@@ -1,4 +1,4 @@
-<?
+<?php
 	include "admin/config/config.bdd.url.php";	
 	require_once('config.php');
 	require_once('admin/config/root.config.php');
@@ -20,7 +20,7 @@
 		<TABLE border=0 height=100% width=100% cellspacing="0" cellpadding="0">
 			<TR>
 				<TD align='center' valign='middle' >
-						<?
+          <?php
 						if (isset($_GET['pic'])){
 							$pic=$_GET['pic'];
 							
@@ -89,7 +89,7 @@
 										}
 										echo "<br>";
 									}
-									echo "<P>Genéré avec <a href='http://www.phpconcept.net/pclzip' target='_blank'>PCLZIP</A></P>";
+									echo "<P>Genï¿½rï¿½ avec <a href='http://www.phpconcept.net/pclzip' target='_blank'>PCLZIP</A></P>";
 									break;
 								default:						
 									break;

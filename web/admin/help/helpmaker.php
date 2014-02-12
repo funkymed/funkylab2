@@ -1,8 +1,8 @@
-<? 	session_start();
+<?php 	session_start();
 	include "../config/config.bdd.url.php";
 	include "../config/root.config.php";
 	/*
-	@mysql_select_db(BASE_ADMIN) or die("Impossible de se connecter à la base de données");
+	@mysql_select_db(BASE_ADMIN) or die("Impossible de se connecter ï¿½ la base de donnï¿½es");
 	if (isset($_SESSION['funkylab_id'])){
 		$skinadmin=recupeall($_SESSION['funkylab_id'],"admin","skinadmin");
 	}else{

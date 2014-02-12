@@ -1,4 +1,4 @@
-<?
+<?php
 		if (isset($_SESSION["funkylab_login"])){
 			if (isset($_GET['select'])){
 				echo "<script type=\"text/javascript\" src=\"modules/dragwin/wz_dragdrop.js\"></script>";
@@ -21,7 +21,7 @@
 								$id=$_GET['id'];								
 								print create_windows_content("MODIFIER UN COMMENTAIRE","ADDCOMMENT",TEMPLATE_WIN,$id,null);	
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire ï¿½ modifier</P>";
 							}
 						}
 											
@@ -34,7 +34,7 @@
 								$id=$_GET['id'];								
 								print create_windows_content("MODIFIER UN MOT DE LA BLACKLIST","ADDBLACKLIST",TEMPLATE_WIN,$id,null);	
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un mot à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un mot ï¿½ modifier</P>";
 							}
 						}
 					
@@ -54,7 +54,7 @@
 								
 								print create_windows_content($title,"ADDUSER",TEMPLATE_WIN,$id,null);	
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un compte utilisateur à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un compte utilisateur ï¿½ modifier</P>";
 							}
 						}
 	//==================================================================================================
@@ -66,7 +66,7 @@
 								$id=$_GET['id'];
 								print create_windows_content("MODIFIER UN ELEMENT DE GALERIE","ADDELEMENTGAL",TEMPLATE_WIN,$id,null);	
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un élement à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un ï¿½lement ï¿½ modifier</P>";
 							}
 						}
 	//==================================================================================================
@@ -78,7 +78,7 @@
 								$id=$_GET['id'];
 								print create_windows_content("MODIFIER UNE GALERIE","ADDTYPEGAL",TEMPLATE_WIN,$id,null);	
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner une galerie à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner une galerie ï¿½ modifier</P>";
 							}
 						}
 	//==================================================================================================
@@ -97,7 +97,7 @@
 								}
 								
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un menu à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un menu ï¿½ modifier</P>";
 							}
 						}
 						
@@ -169,7 +169,7 @@
 										break;										
 								}
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un billet à modifier</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un billet ï¿½ modifier</P>";
 							}
 						}
 						
@@ -242,7 +242,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM comments WHERE id=$id");								
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire ï¿½ effacer</P>";
 							}
 						}					
 					
@@ -256,7 +256,7 @@
 								$res=mysql_query("DELETE FROM blacklist WHERE id=$id");
 								
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un mot à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un mot ï¿½ effacer</P>";
 							}
 							blacklist::listmots();
 						}
@@ -270,7 +270,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM admin WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un compte utilisateur à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un compte utilisateur ï¿½ effacer</P>";
 							}
 						}
 						
@@ -283,7 +283,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM type_photo WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner une galerie à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner une galerie ï¿½ effacer</P>";
 							}
 						}	
 										
@@ -296,7 +296,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM photo WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un élement à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un ï¿½lement ï¿½ effacer</P>";
 							}
 						}
 
@@ -310,7 +310,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM billet WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un billet à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un billet ï¿½ effacer</P>";
 							}
 						}
 	//==================================================================================================
@@ -322,7 +322,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM messagerie WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un message à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un message ï¿½ effacer</P>";
 							}
 						}
 								
@@ -335,7 +335,7 @@
 								$id=$_GET['id'];
 								$res=mysql_query("DELETE FROM menu WHERE id=$id");
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un menu à effacer</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un menu ï¿½ effacer</P>";
 							}
 						}
 						
@@ -548,7 +548,7 @@
 								$id=$_GET['id'];								
 								print create_windows_content("REPONDRE A UN COMMENTAIRE","ADDCOMMENT",TEMPLATE_WIN,$id,null);			
 							}else{
-								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire pour y répondre.</P>";
+								echo "<P align='center' class='ALERTEDOUBLON'>Veuillez selectionner un commentaire pour y rï¿½pondre.</P>";
 							}					
 						
 						break;	

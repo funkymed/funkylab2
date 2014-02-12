@@ -1,4 +1,4 @@
-<?
+<?php
 class updater{	
 	
 
@@ -109,7 +109,7 @@ class updater{
 		switch(true){
 			case ($etat==1):
 				$select="";
-				$install="<a href=\"index.php?cat=239&list&install=$name\">Cliquez pour mettre à jour</a>";
+				$install="<a href=\"index.php?cat=239&list&install=$name\">Cliquez pour mettre ï¿½ jour</a>";
 				break;
 			case ($etat==2):
 				$select="<img src='".SKIN."/images/viewoff.png' border=0>";
@@ -118,7 +118,7 @@ class updater{
 				break;
 			case ($etat==3):
 				$select="<img src='".SKIN."/images/viewon.png' border=0>";
-				$install="Patch déjà installé";
+				$install="Patch dï¿½jï¿½ installï¿½";
 				break;
 		}		
 		

@@ -1,7 +1,7 @@
-<?
+<?php
 class finder{
 	
-	function search($searchword){
+	static function search($searchword){
 		$wikibuffer= trim($searchword);
 		$searchRESULT="";
 		if ($wikibuffer!=""){
@@ -40,7 +40,7 @@ class finder{
 			
 			
 			
-			$searchRESULT.= "<P align='center'>Vous avez $countresult réponse à votre recherche.</P>";
+			$searchRESULT.= "<P align='center'>Vous avez $countresult rï¿½ponse ï¿½ votre recherche.</P>";
 			
 		}else{
 			$searchRESULT.= "<P align='center'>Veuillez taper un mot pour votre recherche!</P>";
@@ -58,7 +58,7 @@ class finder{
 		return($searchRESULT);
 	}
 
-	function getpage($id,$texte){
+	static function getpage($id,$texte){
 		$resprod=mysql_query("SELECT * FROM billet WHERE id='$id'");	
 		$row = mysql_fetch_array($resprod);
 		$pageid=$row['id'];
@@ -78,7 +78,7 @@ class finder{
 		return($buffer);	
 	}
 
-	function highlight($buffer,$word){
+	static function highlight($buffer,$word){
 		if ($word!=""){
 			$couleur = array('highlight1', 'highlight2', 'highlight3', 'highlight4', 'highlight5');
 			$countcolor=0;	
@@ -87,7 +87,7 @@ class finder{
 			for ($i = 0; $i <= count($surligne)-1; $i++) {
 				$wordsurligne=$surligne[$i];
 				$newword="<span class='$couleur[$countcolor]'>$wordsurligne</span>";
-				$buffer = eregi_replace($wordsurligne,$newword,$buffer);				
+				$buffer = str_ireplace($wordsurligne,$newword,$buffer);
 				if ($countcolor>=4){$countcolor=0;}else{$countcolor+=1;}
 			}	
 		}

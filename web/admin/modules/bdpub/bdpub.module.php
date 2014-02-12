@@ -1,4 +1,4 @@
-<?
+<?php
 class banniere
 {
 	function listbanniere(){

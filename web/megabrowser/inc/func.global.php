@@ -1,4 +1,4 @@
-<?
+<?php
 
 	function EffacerAllFile($path){
 		//echo "<b>".$path."</b><br/>";				
@@ -93,7 +93,7 @@
 			imagecopyresized($image_dest, $image_src, 0, 0, 0, 0,$thumbW,$thumbH, $width, $height);
 			
 			if(!imagejpeg($image_dest,$dir."/".$file)){
-				echo "la création de la vignette a echouée pour l'image $image";
+				echo "la crï¿½ation de la vignette a echouï¿½e pour l'image $image";
 				exit;
 			} 
 			@chmod($dir."/".$file,0644);
@@ -104,7 +104,7 @@
 	function decodedate($date){
 		$dayFrancais=array('Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche');
 		$dayEnglish=array('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
-		$mois=array('Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Décembre');
+		$mois=array('Janvier','Fï¿½vrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Dï¿½cembre');
 		$explodate=explode("-",$date);
 		$theday=date("l", mktime (0,0,0,$explodate[1],$explodate[2],$explodate[0]));
 		for ($aa=0;$aa<=7;$aa++){

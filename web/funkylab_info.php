@@ -1,4 +1,4 @@
-<?	header('Content-Type: text/xml');
+<?php	header('Content-Type: text/xml');
 	print "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n";
 	print "<funkylab version=\"0.1\">";
 	$buffer="";
@@ -75,7 +75,7 @@
 				if ($lastdate!=""){
 					$lastdate=explode(" ",$lastdate);
 					$heure=$lastdate[1];
-					$lastdate=utf8_encode(decodedate($lastdate[0])." à ".$heure);					
+					$lastdate=utf8_encode(decodedate($lastdate[0])." ï¿½ ".$heure);					
 				}
 				$bufferPAGE.="\t\t\t<id>".$rowBILLET['id']."</id>\n";
 				$bufferPAGE.="\t\t\t<nbcom>".$count."</nbcom>\n";

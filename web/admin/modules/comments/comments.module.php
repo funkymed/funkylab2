@@ -1,4 +1,4 @@
-<?
+<?php
 class comments{
 	
 	function listcom($page=0){

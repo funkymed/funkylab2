@@ -1,4 +1,4 @@
-<?
+<?php
 class Admin_user{
 	
 	function listuser(){

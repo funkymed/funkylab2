@@ -1,4 +1,4 @@
-<?
+<?php
 class newsletter
 {
 	//==================================================================================================
@@ -38,10 +38,10 @@ class newsletter
 				<td align='right'>ALERTE DE DOUBLON &nbsp;</td><td width=\"10\" class='ALERTEDOUBLON'></td>
 			</tr>		
 			<tr>
-				<td align='right'>ALERTE EMAIL ERRONNÉ &nbsp;</td><td width=\"10\" class='ALERTEMAIL'></td>
+				<td align='right'>ALERTE EMAIL ERRONNï¿½ &nbsp;</td><td width=\"10\" class='ALERTEMAIL'></td>
 			</tr>		
 			<tr>
-				<td align='right'>ALERTE IP REPETÉE &nbsp;</td><td width=\"10\" class='ALERTEIP'></td>
+				<td align='right'>ALERTE IP REPETï¿½E &nbsp;</td><td width=\"10\" class='ALERTEIP'></td>
 			</tr>						
 		</table>";
 		
@@ -145,7 +145,7 @@ class newsletter
 			<TD width=20><INPUT type=radio name='id' value='$id' $check $disable></TD>
 			<TD><a href='index.php?cat=$cat&select=1&id=$id&listmail'>$id</a></TD>
 			<TD>$mail</TD>
-			<TD>",decodedate($realdate[0])," à ",$realdate[1],"</TD>
+			<TD>",decodedate($realdate[0])," ï¿½ ",$realdate[1],"</TD>
 			<TD>$IPcreation</TD>
 			<TD >$delete</TD>
 		</TR>";
@@ -170,7 +170,7 @@ class newsletter
 					<TD>TITRE</TD>
 					<TD>DATE DE MODIFICATION</TD>
 					<TD>NOM DE L'AUTEUR</TD>
-					<TD>ENVOYÉ LE</TD>					
+					<TD>ENVOYï¿½ LE</TD>					
 					<TD>SUPPRIMER</TD>
 				</TR>
 				<TR class='winline'>
@@ -187,15 +187,15 @@ class newsletter
 					$senddate = $row['senddate'];
 					
 					$dateexplode=explode(" ",$date);
-					$date=decodedate($dateexplode[0])." à ".$dateexplode[1];
+					$date=decodedate($dateexplode[0])." ï¿½ ".$dateexplode[1];
 					
 					if ($senddate!="0000-00-00 00:00:00"){
 						$senddateexplode=explode(" ",$senddate);
-						$senddate=decodedate($senddateexplode[0])." à ".$senddateexplode[1];
+						$senddate=decodedate($senddateexplode[0])." ï¿½ ".$senddateexplode[1];
 						$file="newsletter_oui.gif";
 					}else{
 						$file="newsletter_non.gif";
-						$senddate="pas encore envoyée";
+						$senddate="pas encore envoyï¿½e";
 					}
 							
 					$count+=1;

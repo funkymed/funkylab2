@@ -1,8 +1,8 @@
-<?
+<?php
 	
 	if ($_GET['help']==""){
 		$titrehelp = "Page d'aide en ligne";
-		$pagehelp = "Le menu à gauche vous servira à trouver une solution à votre probleme.";
+		$pagehelp = "Le menu ï¿½ gauche vous servira ï¿½ trouver une solution ï¿½ votre probleme.";
 	}else{
 		$id_help=$_GET['help'];
 		$txt="SELECT * FROM help WHERE id='$id_help'";
@@ -27,7 +27,7 @@
 						<TABLE border=0  class='loginbox' align='center' width=100% cellspacing="15" cellpadding="0">
 							<TR>
 								<TD valign='middle' align='center' class='wintitle'>
-								<? echo "<IMG SRC='",SKIN,"/images/aide.png'>"; ?>
+                  <?php echo "<IMG SRC='",SKIN,"/images/aide.png'>"; ?>
 								<BR>AIDE</TD>
 								<TD valign='middle' BGCOLOR=#000000 width=2 rowspan=3 class='winline'></TD>
 								<TD valign=top rowspan=2>
@@ -55,7 +55,7 @@
 
 <P align='center'><a href='help/imprimeaide.php' target='_blank'>Version imprimable</a></P>
 
-<?
+<?php
 		
 	windowscreate(null,null,null,null,null);
 

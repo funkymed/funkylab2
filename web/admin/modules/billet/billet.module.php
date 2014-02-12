@@ -1,4 +1,4 @@
-<?
+<?php
 
 class billet{
 	
@@ -142,7 +142,7 @@ class billet{
 			}		
 		}
 		
-		/*** si il n'y a pas de billet associé il peut etre effacer sans probleme ***/
+		/*** si il n'y a pas de billet associï¿½ il peut etre effacer sans probleme ***/
 		if (billet::ifparent($id)==true){		
 			$alertName =reduitletext(stripslashes($row['nom']),50);
 			$delete="<a href=\"#\" onclick=\"ConfirmChoice('Voulez vous vraiment effacer $alertName ?','index.php?select=2&id=$id$addurlpage'); return false;\"><IMG SRC='".SKIN."/images/delete.png' border=0></A>";
@@ -171,7 +171,7 @@ class billet{
 				if ($option=="limite"){
 					$nom="visible du ".decodedate($date_debut)." au ".decodedate($date_fin);
 				}else{
-					$nom="visible à partir du ".decodedate($date_debut);
+					$nom="visible ï¿½ partir du ".decodedate($date_debut);
 				}
 				break;	
 			case "gallerie":
@@ -448,19 +448,19 @@ class billet{
 				switch($option){					
 					case "justifie":
 						$pic="ico_texte_alignjust.gif";
-						$alt="texte justifié";	
+						$alt="texte justifiï¿½";	
 						break;
 					case "left":
 						$pic="ico_texte_alignleft.gif";
-						$alt="texte fer à gauche";	
+						$alt="texte fer ï¿½ gauche";	
 						break;
 					case "right":
 						$pic="ico_texte_alignright.gif";
-						$alt="texte fer à droite";	
+						$alt="texte fer ï¿½ droite";	
 						break;
 					case "centre":
 						$pic="ico_texte_aligncenter.gif";
-						$alt="texte centré";	
+						$alt="texte centrï¿½";	
 						break;				
 				}				
 				break;	
@@ -473,7 +473,7 @@ class billet{
 						break;
 					case "align_haut_centre":
 						$pic="ico_texte_image_topcenter.gif";
-						$alt="image haut centré";
+						$alt="image haut centrï¿½";
 						break;
 					case "align_haut_droite":
 						$pic="ico_texte_image_topright.gif";
@@ -485,7 +485,7 @@ class billet{
 						break;
 					case "align_bas_centre":
 						$pic="ico_texte_image_botomcenter.gif";
-						$alt="image bas centré";
+						$alt="image bas centrï¿½";
 						break;
 					case "align_bas_droite":
 						$pic="ico_texte_image_botomright.gif";
@@ -608,8 +608,8 @@ class billet{
 			'descendre un element dans la zone courante',
 			'categorie/page non visible',
 			'categorie/page visible',
-			'categorie/page mise en premiére page',
-			'categorie/page pas mis en premiére page',
+			'categorie/page mise en premiï¿½re page',
+			'categorie/page pas mis en premiï¿½re page',
 		);
 		//------------------------------------------
 		// CATEGORIE
@@ -689,12 +689,12 @@ class billet{
 			'Html',
 			'Video',			
 			'Audio',
-			'Date de parution décallée',	
-			'Date de validitée',
-			'Paragraphe, aligné à gauche',
-			'Paragraphe, centré',
-			'Paragraphe, aligné à droite',
-			'Paragraphe, justifié'
+			'Date de parution dï¿½callï¿½e',	
+			'Date de validitï¿½e',
+			'Paragraphe, alignï¿½ ï¿½ gauche',
+			'Paragraphe, centrï¿½',
+			'Paragraphe, alignï¿½ ï¿½ droite',
+			'Paragraphe, justifiï¿½'
 		);
 		
 		//------------------------------------------
@@ -709,9 +709,9 @@ class billet{
 		
 		$legende['paragraphe']['texte']=array(	
 			'Titre du pragraphe',
-			'Image alignée à gauche dans le paragraphe',
-			'Image centrée dans le paragraphe',
-			'Image aligné à droite dans le paragraphe'
+			'Image alignï¿½e ï¿½ gauche dans le paragraphe',
+			'Image centrï¿½e dans le paragraphe',
+			'Image alignï¿½ ï¿½ droite dans le paragraphe'
 		);
 		
 		$buffer.="<table align=\"center\"><tr>";

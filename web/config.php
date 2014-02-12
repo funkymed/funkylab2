@@ -1,4 +1,4 @@
-<?	
+<?php
 	include "admin/config/config.bdd.url.php";	
 	$filephp="browser.php";	
 	$root=$url;			

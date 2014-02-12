@@ -1,4 +1,4 @@
-<?
+<?php
 class imagetype
 {
 	function listype(){	

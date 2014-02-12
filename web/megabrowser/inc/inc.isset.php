@@ -1,4 +1,4 @@
-<?
+<?php
 	if ($admin==true){
 		if (isset($_GET['convertgalerie'])){	
 			$dirconvert=$_GET['convertgalerie'];
@@ -78,7 +78,7 @@
 				if (($ext==".gif") || ($ext==".jpg") || ($ext==".jpeg")|| ($ext==".png")){
 					@unlink($dir."/thumb_".$oldname);	
 				}					
-				echo "<P class='bug'>renommé $oldname par $newname</P>";
+				echo "<P class='bug'>renommï¿½ $oldname par $newname</P>";
 			}else{
 				echo "<P class='bug'>ERREUR </P>";
 			}				
@@ -93,7 +93,7 @@
 				if (($ext==".gif") || ($ext==".jpg") || ($ext==".jpeg")|| ($ext==".png")){
 					@unlink($dirset."/thumb_".$file);	
 				}
-				echo "<P class='bug'>fichier $file dans le repertoire $dirset effacé</P>";
+				echo "<P class='bug'>fichier $file dans le repertoire $dirset effacï¿½</P>";
 			}else{
 				echo "<P class='bug'>ERREUR sur le fichier $file dans le repertoire $dirset</P>";
 			}
@@ -112,14 +112,14 @@
 				$return =@mkdir ($dirset."/".$newdirname, 0777);
 				if ($return==true){			
 					$erreur=false;
-					$msg="Repertoire $newdirname crée";
+					$msg="Repertoire $newdirname crï¿½e";
 				}else{
 					$erreur=true;
-					$msg="Le repertoire $newdirname existe déjà";
+					$msg="Le repertoire $newdirname existe dï¿½jï¿½";
 				}
 			}else{
 				$erreur=true;
-				$msg="Veuillez entrer le nom d'un repertoire afin de le créer";
+				$msg="Veuillez entrer le nom d'un repertoire afin de le crï¿½er";
 			}				
 			echo "<P class='bug'>$msg</P>";
 		}
@@ -137,7 +137,7 @@
 			$chemin = $target.$_FILES['fichier']['name'];
 			if(move_uploaded_file($tmp,$chemin)){
 					@chmod($chemin,0644);
-				echo "<P class='bug'>Fichier uploadé</P>";
+				echo "<P class='bug'>Fichier uploadï¿½</P>";
 			}else{
 				$erreur=true;
 				echo "<P class='bug'>ERREUR D'UPLOAD</P>";

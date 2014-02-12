@@ -1,8 +1,8 @@
-<?
+<?php
 
 class calendrier{
 	
-	function display($mois_set,$annee_set,$day_set){
+	static function display($mois_set,$annee_set,$day_set){
 		$buffer="";
 
 		$jourdanslemois=date("t", mktime (0,0,0,$mois_set,1,$annee_set));	
@@ -11,11 +11,11 @@ class calendrier{
 		$numerodumois=date("m");
 		$dayFrancais=array('Lun','Mar','Mer','Jeu','Ven','Sam','Dim');
 		$dayEnglish=array('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
-		$mois=array('Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Décembre');
+		$mois=array('Janvier','Fï¿½vrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Dï¿½cembre');
 		
 	//==================================================================================================
-	//	Si le mois est 01 on prevois le mois precedent en 12 avec une année de moins
-	//	Si le mois est 12 on prevois le mois prochains en 01 avec une année de plus
+	//	Si le mois est 01 on prevois le mois precedent en 12 avec une annï¿½e de moins
+	//	Si le mois est 12 on prevois le mois prochains en 01 avec une annï¿½e de plus
 	//==================================================================================================
 
 		$prevmonth=$mois_set-1;
@@ -103,7 +103,7 @@ class calendrier{
 				case ($day_set==$Nday):
 					$buffer.= "<TD class='cal_valide_OVER' align='center'>$Nday</TD>";	
 					break;
-				case (calendrier::checkjour($Nday,$mois_set,$annee_set)==true):
+				case (self::checkjour($Nday,$mois_set,$annee_set)==true):
 					$buffer.= "
 					<TD class=\"cal_valide\" onmouseover=\"className='cal_valide_OVER'\" onmouseout=\"className='cal_valide'\" valign=\"middle\" align=\"center\">
 						<a href='index.php?calendrier&month=$mois_set&year=$annee_set&day=$dayview'>$Nday</A>
@@ -128,8 +128,8 @@ class calendrier{
 	//==================================================================================================
 	//	ON VERIFIS SI IL Y A AU MOINS UN BILLET DISPONIBLE DANS LE CALENDRIER
 	//==================================================================================================
-		
-	function checkjour($jour,$mois,$annee){
+
+  static function checkjour($jour,$mois,$annee){
 		if (strlen($jour)<=1){ $jour="0".$jour;}
 		$datedebut=$annee."-".$mois."-".$jour;
 		$today=date("Y-m-d");

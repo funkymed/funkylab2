@@ -29,7 +29,7 @@
 	<body>
 		<p align='center'><a class=i href="javascript:imprimer();">Imprimer cette page</a></p>
 
-		<?
+    <?php
 			include "../config/config.bdd.url.php";
 			include "../config/root.config.php";
 		

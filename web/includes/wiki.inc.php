@@ -10,7 +10,7 @@
 	}
 </script>
 
-<?
+<?php
 if (isset($HTTP_GET_VARS['wiki'])){	
 
 	
@@ -252,7 +252,7 @@ if (isset($HTTP_GET_VARS['wiki'])){
 		if ($typeset!=""){
 			makeselectwiki(recupetypename($typeset),$typeset);	
 		}else{
-			makeselectwiki("Choisissez un genre de produit à lister",$typeset);	
+			makeselectwiki("Choisissez un genre de produit ï¿½ lister",$typeset);	
 		}
 		echo "<INPUT class='tablemenu' TYPE='submit' VALUE='DISPLAY'>\n
 		<input type='hidden' name='searchfor'>\n

@@ -1,4 +1,4 @@
-<?
+<?php
 	if ($admin==false){	
 		$buffer0.= "
 			<FORM ACTION='$filephp' method='POST' id=\"dialoguebox\" >

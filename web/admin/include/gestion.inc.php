@@ -1,4 +1,4 @@
-<?
+<?php
 
 	if (isset($_SESSION["funkylab_login"])){
 
@@ -126,7 +126,7 @@
 				messagerie::checkmail();
 				
 				echo"</TD>
-				<TD align='right' class=\"menubackgr\"><a href='index.php?delog'><font color='#FFB000'>Déconnexion</font></A> <font color='#AAAAAA'>",$_SESSION["funkylab_name"],"&nbsp;&nbsp;</font></TD>
+				<TD align='right' class=\"menubackgr\"><a href='index.php?delog'><font color='#FFB000'>Dï¿½connexion</font></A> <font color='#AAAAAA'>",$_SESSION["funkylab_name"],"&nbsp;&nbsp;</font></TD>
 			</TR>
 			<TR>
 		</TABLE>
@@ -153,24 +153,24 @@
 								<fieldset>
 									<legend>DETECTION DU NAVIGATEUR INTERNET</legend>";
 								if ($info['browser']!="FIREFOX"){
-									echo "<p align='left'>Attention vous n'utilisez pas <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='_blank'>Firefox</a>, nous vous invitons à le telecharger pour travailler avec Funkylab dans des conditions optimale.
+									echo "<p align='left'>Attention vous n'utilisez pas <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='_blank'>Firefox</a>, nous vous invitons ï¿½ le telecharger pour travailler avec Funkylab dans des conditions optimale.
 									</p>
-									<p align='left'>Mozilla Firefox est le navigateur de nouvelle génération de la fondation Mozilla. Firefox vous permettra de surfer plus vite, plus sûrement et plus efficacement qu'avec n'importe quel autre navigateur.</p>
+									<p align='left'>Mozilla Firefox est le navigateur de nouvelle gï¿½nï¿½ration de la fondation Mozilla. Firefox vous permettra de surfer plus vite, plus sï¿½rement et plus efficacement qu'avec n'importe quel autre navigateur.</p>
 									<a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'><img src='",SKIN,"/images/bigfirefox.gif' border=0></a>
-									<p>Nous précisons que nous ne sommes pas en partenariat avec Firefox.<br/>
-									 Ce choix a été fais pour des raisons technique.</p>
+									<p>Nous prï¿½cisons que nous ne sommes pas en partenariat avec Firefox.<br/>
+									 Ce choix a ï¿½tï¿½ fais pour des raisons technique.</p>
 									";			
 								}else{
 									echo "
-									<p align='left'>Vous utilisez Firefox. Vous pouvez profiter des effets visuel ainsi qu'une fiabilité maximale.</p>
-									<p align='left'>Funkylab a été optmisé pour Firefox. Certains effets comme les couches alpha dans les images au format PNG ne sont pas supporté sur d'autre navigateur ainsi qu'une compatibilité avec AJAX.</p>
+									<p align='left'>Vous utilisez Firefox. Vous pouvez profiter des effets visuel ainsi qu'une fiabilitï¿½ maximale.</p>
+									<p align='left'>Funkylab a ï¿½tï¿½ optmisï¿½ pour Firefox. Certains effets comme les couches alpha dans les images au format PNG ne sont pas supportï¿½ sur d'autre navigateur ainsi qu'une compatibilitï¿½ avec AJAX.</p>
 									";			
 								}
 							
 								echo "</fieldset>
 								<br/>
 								<fieldset>
-								<legend>ETAT DE LA BASE DE DONNÉE</legend>
+								<legend>ETAT DE LA BASE DE DONNï¿½E</legend>
 								",checkallbase(),"
 								</fieldset>
 								
@@ -178,7 +178,7 @@
 								<fieldset>
 								<legend>OCCUPATION DU SITE</legend>
 								<font size=+1>Votre site occupe ".round(dskspace("../")/1048576)." Mo sur le serveur</font><br/>
-								Le contenu multimédia occupe ".round(dskspace("../image")/1048576)." Mo<br/>
+								Le contenu multimï¿½dia occupe ".round(dskspace("../image")/1048576)." Mo<br/>
 								Les templates du site occupent ".round(dskspace("../template")/1048576)." Mo
 								</fieldset>
 							</TD>
@@ -192,6 +192,8 @@
 	}
 	
 	function checkallbase(){
+    $buffer='';
+    /*
 		$base = BASEDEFAUT;
 		$table = mysql_list_tables($base);
 		$txt="";
@@ -208,14 +210,14 @@
 		}
 		if ($optimise==true){
 			if ($datalose<=1024){
-				$message="<P>La base n'a pas besoin d'être optimisé</p>";	
+				$message="<P>La base n'a pas besoin d'ï¿½tre optimisï¿½</p>";	
 			}
 			if ($datalose>=1024){
 				$message="<P>Vous devriez optimiser la base</p>";	
 			}			
 			$action="<a href='index.php?optimisesql=funkylab2&cat=240'>Optimiser la base</A>";
 		}else{
-			$message="<P>Optimisée</P>";
+			$message="<P>Optimisï¿½e</P>";
 			$action="aucune action possible";
 		}
 		$buffer="
@@ -231,7 +233,8 @@
 					<td align='center'>$action</td>
 				</tr>
 			</table>
-		";	  
+		";
+    */
 		return($buffer);
 	}
 		
