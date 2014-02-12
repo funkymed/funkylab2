@@ -1,44 +1,42 @@
 <?php
 if (isset($_SESSION["funkylab_login"])){
 }else{
-	
+
 	if (isset($_POST['login'])){
-		
+
 		$pass=md5($_POST['pass']);
-		
+
 		$sql = "SELECT * FROM admin WHERE login = '".$_POST['login']."' AND Pass = '".$pass."'";
 		$req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 		$data = mysql_fetch_array($req);
 
-		if (($_POST['login']=="") OR ($_POST['pass']=="")){ 
+		if (($_POST['login']=="") OR ($_POST['pass']=="")){
 			erreurlogin();
-		}else{	
-			if (($_POST['login']==$data['login']) AND ($pass==$data['pass'])){	
+		}else{
+			if (($_POST['login']==$data['login']) AND ($pass==$data['pass'])){
 				$id=$data['id'];
 				$lastconnect=codeladate();
 				$query="UPDATE admin SET derniereconnexion='$lastconnect' WHERE id='$id'";
-				$result=mysql_query($query);						
+				$result=mysql_query($query);
+				$_SESSION['funkylab_id']            = $data['id'];
+				$_SESSION['funkylab_login']         = $_POST['login'];
+				$_SESSION['funkylab_admin']         = $data['admin'];
+				$_SESSION['funkylab_autorisation']  = explode(",",$data['autorisation']);
+				$_SESSION['funkylab_name']          = $data['nom']." ".$data['prenom'];
+				$_SESSION['funkylab_optionadmin']   = $data['optionadmin'];
+				$_SESSION['funkylab_superadmin']    = $data['superadmin'];
 
-				$_SESSION['funkylab_id'] = $data['id'];			
-				$_SESSION['funkylab_login'] = $_POST['login'];					
-				$_SESSION['funkylab_admin'] = $data['admin'];				
-				$_SESSION['funkylab_autorisation'] = explode(",",$data['autorisation']);				
-				$_SESSION['funkylab_name'] = $data['nom']." ".$data['prenom'];				
-				$_SESSION['funkylab_optionadmin'] = $data['optionadmin'];
-				  
-				//$_SESSION['funkylab_superadmin'] = $data['superadmin'];			
-				
-				displaymenu();	
+				displaymenu();
 				accueil();
 			}else{
-				
+
 				erreurlogin();
 			}
 		}
 	}else{
 		include ("connect.inc.php");
 	}
-}	
+}
 
 function erreurlogin(){
 	echo "

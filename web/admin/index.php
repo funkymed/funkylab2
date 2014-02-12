@@ -147,7 +147,7 @@
 			$temps=$timearrive-$timedepart;
 			$temps=number_format($timearrive-$timedepart,2);
 			echo "<P align='center'>temps pour cr�er la page : ",$temps," secondes<br/>
-			optimis� pour <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'>Firefox</a><br/>
+			optimisé pour <a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'>Firefox</a><br/>
 			<a href='http://www.mozilla-europe.org/fr/products/firefox/' target='blank'><img src='",SKIN,"/images/firefox.gif' border=0></a></P>
 			";
 			mysql_close($basetowork);

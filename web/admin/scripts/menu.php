@@ -1,4 +1,4 @@
-<?	
+<?php
 $autorisation_session_check = $_SESSION["funkylab_autorisation"];	
 $menu_buffer="
 var myMenu =
@@ -29,7 +29,7 @@ var myMenu =
 			[null,'Gestion des Utilisateurs','index.php?cat=255&list',null,'Configuration'],
 			[null,'Gestion des Templates','index.php?cat=259&list',null,'Configuration'],
 			[null,'Gestion des patchs','index.php?cat=239&list',null,'Configuration'],
-			[null,'Base de données','myBackup.php','_blank','BDD'],
+			[null,'Base de donnï¿½es','myBackup.php','_blank','BDD'],
 		],	
 		_cmSplit,
 		
@@ -67,7 +67,7 @@ var myMenu =
 			$menu_buffer.=  "[null,'Billet','index.php?cat=243&list&order=TOUT&orderby=id&page=0',null,'Billet'],";
 		}else{		
 			if ($autorisation_session_check[6]=="1"){
-				$menu_buffer.=  "[null,'Gérer votre espace internet','index.php?cat=243&list&order=TOUT&orderby=id&page=0',null,'Billet'],";
+				$menu_buffer.=  "[null,'Gï¿½rer votre espace internet','index.php?cat=243&list&order=TOUT&orderby=id&page=0',null,'Billet'],";
 			}	
 		}	
 		
