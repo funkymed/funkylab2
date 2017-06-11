@@ -20,7 +20,7 @@ See the file [data/doc/FunkylabV2.19.6.doc](data/doc/FunkylabV2.19.6.doc)
 # How to install
 
 You need to make a vhost like this :
-~~~
+```
 <VirtualHost *:80>
   ServerName funkylab2.local
   DocumentRoot /your_path_files/web/
@@ -32,27 +32,25 @@ You need to make a vhost like this :
       allow from all
   </Directory>
 </VirtualHost>
-~~~
+```
 
-add this url to your hosts file :
-~~~
-funkylab2.local
-~~~
+add this url to your hosts file `funkylab2.local`
+
 
 make the directory web/image in chmod 777 :
-~~~
+```bash
 chmod 777 web/image
-~~~
+```
 
 create a database called 'f2' and load the data/dump/bddfunkylab2.sql file in it.
 
 In commande line :
-~~~
+```bash
 mysql -u root f2<data/dump/bddfunkylab2.sql
-~~~~
+```
 
 Edit the config file web/admin/config/config.bdd.url.php
-~~~
+```php
 <?php
   $host = "localhost";
   $user = "root";
@@ -61,7 +59,7 @@ Edit the config file web/admin/config/config.bdd.url.php
   $url  = "http:/funkylab2.local/";
   $emailpost  = "admin@funkylab.net";
 ?>
-~~~
+```
 
 and voilà you can now see the website on http://funkylab2.local
 
