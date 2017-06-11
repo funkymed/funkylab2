@@ -15,7 +15,7 @@ GitHub : https://github.com/funkymed/funkylab2
 Cyril Pereira http://www.cyrilpereira.com
 
 ## Doc
-See the file data/doc/FunkylabV2.19.6.doc
+See the file [data/doc/FunkylabV2.19.6.doc](data/doc/FunkylabV2.19.6.doc)
 
 # How to install
 
